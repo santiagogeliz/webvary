@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/datospaginas.css' %}">
+	<title>Impor Global - Distribución de Frutos Secos</title>
+</head>
+<body>
+<header class="block">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle menu_toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'home' %}"><h1>ImporGlobal</h1></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav navbar-right">
+      		<li>{% block nav-home %}<a href="{% url 'home' %}">Inicio</a>{% endblock %}</li>
+      		<li>{% block nav-nosotros %}<a href="{% url 'nosotros' %}">Nosotros</a>{% endblock %}</li>
+      		<li>{% block nav-productos %}<a href="#">Productos</a>{% endblock %}
+      			<ul>
+      				{% for categoria in categorias %}
+      				<li><a href="{% url 'categoria' pk=categoria.pk %}">{{categoria.nombre}}</a></li>
+      			</ul>
+      		</li>
+      		<li>{% block nav-contacto %}<a href="{% url 'contacto' %}">Contacto</a>{% endblock %}</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+{% block content %}
+
+{% endblock %}
+{% block footer %}
+<div id="footer">
+	<div class="container">
+		<div class="one-third column" data-appear-top-offset="-100" data-animated="fadeInLeft">
+			<h3>Nosotros</h3>
+			<p style="margin:0;">{{ info_contacto.descripcion_pie }}</p>
+		</div>
+		<div class="one-third column" data-appear-top-offset="-100" data-animated="fadeInUp">
+			<h3>Ponte En Contacto</h3>
+			<ul class="get-in-touch">
+			{% if info_contacto.ubicacion %}
+				<li >
+					<i class="icon-map-marker"></i> <p>{{ info_contacto.ubicacion }}</p>
+				</li>
+			{% endif %}
+			{% if info_contacto.telefono %}
+			<li>
+				<i class="icon-user"></i> <p>{{ info_contacto.telefono }}</p>
+			</li>
+			{% endif %}
+			<li><i class="icon-envelope-alt"></i> <p>{{ info_contacto.email }}</p></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer-bottom">
+	<div class="container">
+		<div class="eight columns">ImporGlobal © Copyright {% now "Y" %}. Todos los derechos reservados</div>
+		<div class="eight columns">
+			{% if info_contacto.facebook or info_contacto.instagram %}
+			<ul class="social-icons-footer">
+				{% if info_contacto.facebook %}
+				<li><a href="{{ info_contacto.facebook }}" class="tooltip top" title="Facebook"><i class="icon-facebook"></i></a></li>
+				{% endif %}
+                {% if info_contacto.instagram %}
+				<li><a href="{{ info_contacto.instagram }}" class="tooltip top" title="Instagram"><i class="icon-instagram"></i></a></li>
+				{% endif %}
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% endblock footer %}
+</body>
+</html>

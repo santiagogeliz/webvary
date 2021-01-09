@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<div class="container">
+	<div class="section-title">
+		<h2>{{nosotros.titulo_nosotros}}</h2>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="title-form">
+				<h3>Formulario de Contacto</h3>
+			</div>
+			<div class="form-section">
+				<mark id="message"></mark>
+
+				<form method="post" action="" name="contactform" id="contactform">
+
+	                <fieldset>
+	                    {% csrf_token %}
+	                    <div>
+	                        <label for="name" accesskey="U">Nombre:</label>
+	                        {{ formulario.name }}
+	                    </div>
+
+	                    <div>
+	                        <label for="email" accesskey="E">Email: <span>*</span></label>
+	                        {{ formulario.email }}
+	                    </div>
+
+	                    <div>
+	                        <label for="telefono" accesskey="E">Número de teléfono: <span>*</span></label>
+	                        {{ formulario.telefono }}
+	                    </div>
+
+	                    <div>
+	                        <label for="comments" accesskey="C">Mensaje: <span>*</span></label>
+	                        {{ formulario.comments }}
+	                    </div>
+
+	                </fieldset>
+
+	                <input type="submit" class="submit" id="submit" value="Enviar Mensaje" />
+	                <div class="clearfix"></div>
+
+            	</form>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="contacto-info">
+				<div class="section-subtitle">
+					<h3>Quedate en Contacto</h3>
+				</div>
+				<p>{{ info_contacto.descripcion_derecha }}</p>
+
+				<ul class="contact-informations">
+                	<li><span class="address">{{ info_contacto.ubicacion }}</span></li>
+            	</ul>
+
+            	<ul class="contact-informations second">
+	                {% if info_contacto.telefono %}
+	                <li><i class="icon-user"></i> <p>{{ info_contacto.telefono }}</p></li>
+	                {% endif %}
+	                <li><i class="icon-envelope-alt"></i> <p>{{ info_contacto.email }}</p></li>
+	                {% if info_contacto.sitio_web %}
+	                <li><i class="icon-globe"></i> <p>{{ info_contacto.sitio_web }}</p></li>
+	                {% endif %}
+            	</ul>
+			</div>
+			{% if info_contacto.facebook or info_contacto.instagram %}
+			<div class="contacto-social">
+				<div class="section-subtitle">
+					<h3>Quedate en Contacto</h3>
+				</div>
+				<ul class="social-icons">
+	                {% if info_contacto.facebook %}
+	                <li><a class="facebook" href="{{ info_contacto.facebook }}"><i class="icon-facebook"></i></a></li>
+	                {% endif %}
+	                {% if info_contacto.instagram %}
+	                <li><a class="instagram" href="{{ info_contacto.instagram }}"><i class="icon-instagram"></i></a></li>
+	                {% endif %}
+            	</ul>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+{% block carousel %}
+
+{% endblock carousel}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="section-subtitle">
+				<h3>Nuestros Productos</h3>
+			</div>
+			<div class="principals-prod">
+				<ul class="grid">
+					{% for producto_destacado in productos_destacados %}
+					<li>
+						<figure>
+							<img src="{{ producto_destacado.imagen_producto.url }}" alt="{{ producto_destacado.titulo }}">
+							<figcaption>
+								<h3>{{ producto_destacado.titulo }}</h3>
+								<span>{{ producto_destacado.subtitulo }}</span>
+								<a href="{% url 'categoria' pk=producto_destacado.link.pk %}">Ver</a>
+							</figcaption>
+						</figure>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-9">
+			<div class="section-subtitle">
+				<h3>{{nosotros.titulo_nosotros}}</h3>
+			</div>
+			<div class="section-text">
+				<p>{{nosotros.parrafo_uno}}</p><br>
+				<a href="{% url 'nosotros' pk=nosotros.pk %}"></a>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="section-image">
+				<img src="nosotros.imagen_nosotros.link" alt="nosotros.titulo_nosotros">
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+

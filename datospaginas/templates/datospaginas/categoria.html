@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<div class="container">
+	<div class="section-title">
+		<h2>{{categoria.nombre}}</h2>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<ul class="shop product-style-desc">
+				{% for product in productos %}
+				<li data-appear-top-offset="-100" data-animated="fadeInLeft">
+					<figure>
+                    	
+						<a href="{% url 'producto' pk=product.pk %}"><img src="{{product.imagen.url}}" alt="{{product.nombre}}"></a>
+						<figcaption>
+							<h3>{{ product.nombre }}</h3>
+                            <div class="shop-button">     
+                            <a href="{% url 'producto' pk=product.pk %}"><i class="icon-eye-open"></i> Ver</a></div>
+						</figcaption>
+						
+					</figure>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<div class="section-subtitle">
+				<h5>Categorías</h5>
+			</div>
+			<nav class="categories">
+				<ul>
+					{% for categ in categorias %}
+					<li><a href="{% url 'categoria' pk=categ.pk %}">{{categ.nombre}}</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+
+

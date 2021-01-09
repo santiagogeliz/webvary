@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<div class="container">
+	<div class="section-title">
+		<h2>{{producto.categoria}}</h2>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="product-image">
+				<img src="{{producto.imagen.url}}" alt="{{producto.nombre}}">
+			</div>
+		</div>
+		<div class="col-sm-8">
+			<h2>{{{producto.nombre}}</h2>
+			<p> {{ producto.descripcion }} </p>
+			<ul class="list-3" style="margin: 5px 0 18px 0;">
+				{% if producto.atributo1 %}
+				<li>{{ producto.atributo1 }}</li>
+				{% endif %}
+				{% if producto.atributo2 %}
+				<li>{{ producto.atributo2 }}</li>
+				{% endif %}
+				{% if producto.atributo3 %}
+				<li>{{ producto.atributo3 }}</li>
+				{% endif %}
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<ul class="shop product-style-desc">
+				{% for product in relacionados %}
+				<li class="relacionados">
+					<figure>
+						<a href="{% url 'producto' pk=product.pk %}"><img src="{{product.imagen.url}}" alt="{{product.nombre}}"></a>
+						<figcaption>
+							<h3>{{ product.nombre }}</h3>
+                            <div class="shop-button">     
+                            <a href="{% url 'producto' pk=product.pk %}"><i class="icon-eye-open"></i> Ver</a></div>
+						</figcaption>
+					</figure>
+				</li>
+		        {% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock %}
