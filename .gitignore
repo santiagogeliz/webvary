@@ -4,4 +4,6 @@ __pycache__
 nvenv
 db.sqlite3
 /static
+media/media
+media/
 .DS_Store
