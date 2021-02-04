@@ -1,88 +1,104 @@
-{% extends "layout.html" %}
+{% extends "datospaginas/layout.html" %}
 
+{% load static %}
+
+{% block nav-contacto %}<a class="zelda active" href="{% url 'contacto' %}">CONTÁCTANOS</a>{% endblock %}
 
 {% block content %}
 <div class="container">
-	<div class="section-title">
-		<h2>{{nosotros.titulo_nosotros}}</h2>
+	{% if info_contacto == None %}
+	<div class="message-section">
+		<div class="mensaje-admin">
+			<h2>Crea Información de Contacto en el /admin</h2>
+		</div>
 	</div>
-	<div class="row">
+	{% endif %}
+	{% if info_contacto %}
+	<div class="row section-body">
+		<div class="section-title">
+			<h1><span class="glyphicon glyphicon-envelope"></span> Contáctanos</h1>
+		</div>
+		<div class="col-sm-12">
+			<div class="ubicacion-mapa-google">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.1707667875967!2d-74.78044766070381!3d10.987277601835332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4329d598dc619%3A0xef4045d61aaf95b5!2sProductos%20de%20Caucho%20Universal%20Ltda!5e0!3m2!1ses-419!2sco!4v1584238700330!5m2!1ses-419!2sco" width="1349" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="row section-body">
 		<div class="col-sm-8">
 			<div class="title-form">
 				<h3>Formulario de Contacto</h3>
 			</div>
 			<div class="form-section">
-				<mark id="message"></mark>
-
-				<form method="post" action="" name="contactform" id="contactform">
-
-	                <fieldset>
-	                    {% csrf_token %}
-	                    <div>
-	                        <label for="name" accesskey="U">Nombre:</label>
-	                        {{ formulario.name }}
+				<form method="post" action="" name="contactform" id="contactform">{% csrf_token %}
+	            	<fieldset>
+	            		<div class="name">
+	                    	<label for="name" accesskey="U">Nombre:</label>
+	                    	<div id="name">
+	                        	{{ formulario.name }}
+	                    	</div>
 	                    </div>
-
-	                    <div>
+	                    <div class="email">
 	                        <label for="email" accesskey="E">Email: <span>*</span></label>
-	                        {{ formulario.email }}
+	                        <div id="email">
+	                        	{{ formulario.email }}
+	                        </div>
 	                    </div>
-
-	                    <div>
+	                    <div class="telefono">
 	                        <label for="telefono" accesskey="E">Número de teléfono: <span>*</span></label>
-	                        {{ formulario.telefono }}
+	                        <div id="telefono">
+	                        	{{ formulario.telefono }}
+	                        </div>
 	                    </div>
-
-	                    <div>
+	                    <div class="comments">
 	                        <label for="comments" accesskey="C">Mensaje: <span>*</span></label>
-	                        {{ formulario.comments }}
+	                        <div id="comments">
+	                        	{{ formulario.comments }}
+	                        </div>
 	                    </div>
-
 	                </fieldset>
-
-	                <input type="submit" class="submit" id="submit" value="Enviar Mensaje" />
-	                <div class="clearfix"></div>
-
+	                <div class="contact-submit">
+	                	<input type="submit" class="submit" id="submit" value="Enviar" />
+	                </div>
             	</form>
 			</div>
 		</div>
 		<div class="col-sm-4">
 			<div class="contacto-info">
-				<div class="section-subtitle">
-					<h3>Quedate en Contacto</h3>
+				<div class="section-minititle">
+					<h3>Quédate en Contacto</h3>
 				</div>
-				<p>{{ info_contacto.descripcion_derecha }}</p>
+				<p class="contact-descrip">{{info_contacto.descripcion_derecha|linebreaksbr}}</p>
 
-				<ul class="contact-informations">
-                	<li><span class="address">{{ info_contacto.ubicacion }}</span></li>
-            	</ul>
+				<div class="contact-ubication">
+                	<p>{{info_contacto.ubicacion}}</p>
+            	</div>
 
-            	<ul class="contact-informations second">
+            	<div class="contact-informations">
 	                {% if info_contacto.telefono %}
-	                <li><i class="icon-user"></i> <p>{{ info_contacto.telefono }}</p></li>
+	                <p><span class="glyphicon glyphicon-phone"></span> {{info_contacto.telefono}}</p>
 	                {% endif %}
-	                <li><i class="icon-envelope-alt"></i> <p>{{ info_contacto.email }}</p></li>
+	                <p><span class="glyphicon glyphicon-envelope"></span> {{info_contacto.email}}</p>
 	                {% if info_contacto.sitio_web %}
-	                <li><i class="icon-globe"></i> <p>{{ info_contacto.sitio_web }}</p></li>
+	                <p>{{info_contacto.sitio_web}}</p>
 	                {% endif %}
-            	</ul>
+            	</div>
 			</div>
 			{% if info_contacto.facebook or info_contacto.instagram %}
 			<div class="contacto-social">
-				<div class="section-subtitle">
-					<h3>Quedate en Contacto</h3>
+				<div class="section-minititle">
+					<h3>Redes Sociales</h3>
 				</div>
-				<ul class="social-icons">
-	                {% if info_contacto.facebook %}
-	                <li><a class="facebook" href="{{ info_contacto.facebook }}"><i class="icon-facebook"></i></a></li>
-	                {% endif %}
+				<div class="social-icons">
+	            	{% if info_contacto.facebook %}
+	            	<a class="facebook" href="{{ info_contacto.facebook }}"><img src="{% static 'img/facebook_47004.ico' %}" style="width: 50px; height: auto;"></a>{% endif %}
 	                {% if info_contacto.instagram %}
-	                <li><a class="instagram" href="{{ info_contacto.instagram }}"><i class="icon-instagram"></i></a></li>
-	                {% endif %}
-            	</ul>
+	                <a class="instagram" href="{{ info_contacto.instagram }}"><img src="{% static 'img/1491580635-yumminkysocialmedia26_83102.ico' %}" style="width: 50px; height: auto;"></a>{% endif %}
+            	</div>
 			</div>
 			{% endif %}
 		</div>
 	</div>
+	{% endif %}
 </div>
 {% endblock %}

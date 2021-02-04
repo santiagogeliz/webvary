@@ -1,0 +1,63 @@
+{% extends "datospaginas/layout.html" %}
+
+{% load static %}
+
+{% block nav-blog %}<a class="zelda active" href="{% url 'blog' %}">BLOG</a>{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row section-body">
+		<div class="section-title">
+			<h1>{{post.titulo}}</h1>
+		</div>
+		<div class="post-area">
+			<div class="post-img">
+				<img src="{{post.imagen_post.url}}" alt="{{post.titulo}}" >
+			</div>
+			<div class="post-content">
+				<div class="author-section">
+					<div class="author-img">
+						<img src="{% static 'img/4092564-about-mobile-ui-profile-ui-user-website_114033.png' %}">
+					</div>
+					<div class="author-date">
+						<p><samp>By </samp>{{post.autor}} <span class="post-date">{{post.fecha_creacion.date}}</span></p>
+					</div>
+				</div>
+				<div class="post-text">
+					<div class="post-intro">
+						<p>{{post.introduccion|linebreaks}}</p>
+					</div>
+					<div class="post-body">
+						<p>{{post.contenido|linebreaks}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row section-body">
+		<div class="section-subtitle">
+			<h2>Artículos Relacionados</h2>
+		</div>
+		<div class="col-sm-9 related-articles">
+			<div class="related-post">
+				{% for post in relacionados %}
+				<div class="col-sm-6">
+					<a href="{% url 'post' pk=post.pk %}">
+						<div class="recent-post">
+							<div class="recent-post-img">
+								<img src="{{post.imagen_post.url}}" alt="{{post.titulo}}" style="width: 100%; height: auto;">
+							</div>
+							<div class="recent-post-info">
+								<p class="recent-post-categ">{{post.categoria}}</p>
+								<p class="recent-post-title">{{post.titulo}}</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

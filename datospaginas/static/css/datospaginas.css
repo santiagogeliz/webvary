@@ -1,0 +1,3794 @@
+body, html {
+	font-family: 'Open Sans', sans-serif;
+}
+ul {
+	list-style-type: none;
+}
+
+/* CSS PARA MENSAJES ADMIN */
+
+.mensaje-admin {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-bottom: 50px;
+	background-color: #F2D377;
+}
+.mensaje-admin h2 {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+	color: #FFEDE0;
+	background-color: #BF5630;
+}
+
+
+/* CSS PARA NAVBAR */
+
+.navbar {
+	height: 90px;
+	background-color: #FFEDE0;
+}
+.navbar.short {
+	height: 60px;
+}
+.navbar-brand {
+	position: relative;
+	left: 100px;
+}
+.navbar-brand.short {
+	bottom: 15px;
+}
+.navbar-brand img {
+	width: 100%;
+	height: auto;
+}
+.nav {
+	font-size: 15px;
+	position: relative;
+	right: 150px;
+	top: 35px;
+}
+.nav.short {
+	top: 20px;
+}
+.zelda {
+	color: #59544F;
+	margin-right: 20px;
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+}
+.zelda.active {
+	border-bottom: solid #F2D377;
+
+}
+.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+	text-decoration: none;
+	color: white;
+	background-color: #F2D377;
+	border-radius: 5px;
+}
+.zelda:active, .zelda:focus, .zelda:visited {
+	text-decoration: none;
+	color: white;
+	background-color: #F2D377;
+}
+.dropdown-menu {
+	background-color: #161D26;
+	position: absolute;
+	top: 50px;
+	margin-right: 145px;
+}
+.dropdown-menu.short {
+	top: 35px;
+
+}
+.dropdown-menu.moved {
+	margin-right: 230px;
+}
+.dropdown-menu a {
+	display: block;
+	color: white;
+	background-color: #161D26;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.dropdown-menu a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #2C3540;
+}
+
+/* CSS PARA FOOTER */
+
+.footer {
+	margin-top: 100px;
+	text-align: justify;
+	color: #8C8C8C;
+}
+.footer-bottom {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #8C8C8C;
+}
+.contacto-footer {
+	padding: 0px;
+}
+.zelda span {
+	font-size: 10px;
+}
+/* CSS PARA HOME */
+
+/* CSS PARA PORTADAS_PRINCIPALES HOME */
+
+.content {
+	margin-top: 70px;
+}
+.container {
+	width: 100%;
+}
+.container-fluid {
+	padding: 0px;
+}
+.carousel-image img {
+	width: 100%;
+	height: 500px;
+}
+.carousel-caption {
+	position: absolute;
+	bottom: 150px;
+	text-align: justify;
+}
+.text h2, .text h3, .text p {
+	color: white;
+}
+.dark h2, .dark h3, .dark p {
+	color: black;
+}
+
+/* CSS PARA SERVICIOS HOME */
+
+.home-service-area {
+	padding: 20px;
+	height: 500px;
+	background-color: #F9F8F7;
+}
+.home-service-img img {
+	width: 100%;
+	height: auto;
+}
+
+/* CSS PARA PRODUCTOS_DESTACADOS HOME */
+
+.section-subtitle {
+	color: #8C0E03;
+	margin-top: 100px;
+}
+.section-subtitle h2 {
+	padding-bottom: 20px;
+	padding-left: 60px;
+	border-bottom: solid #F2D377;
+}
+.principals-prod {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.mostrador-prod {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 350px;
+	background-color: #FFFBF5;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.19);
+}
+.caption-prod h3 {
+	color: #D97904;
+	text-align: center;
+}
+.caption-prod h4 {
+	color: black;
+	text-align: center;
+}
+.body-zelda {
+	text-align: center;
+}
+.body-zelda a {
+	color: #F24607;
+	text-decoration: none;
+	transition: font-size .5s;
+}
+.body-zelda a:hover {
+	color: #F27507;
+	font-size: 16px;
+}
+.img-prod {
+	width: 100%;
+	height: auto;
+	transition: width .5s, margin-left .5s;
+}
+.mostrador-prod:hover .img-prod {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/* CSS PARA NOSOTROS HOME */
+
+.section-body {
+	padding-left: 60px;
+	padding-right: 60px;
+
+}
+.section-nosotros-text {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+/* CSS PARA NOSOTROS */
+
+.section-title {
+	color: #8C0E03;
+	margin-top: 50px;
+}
+.section-title h1 {
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: solid #F2D377;
+}
+.section-text {
+	text-align: justify;
+}
+
+/* CSS PARA CATEGORIAS PRODUCTOS*/
+
+.product-area {
+	padding: 10px;
+	height: 170px;
+}
+.img-producto {
+	width: 100%;
+	height: auto;
+	transition: width .5s, margin-left .5s;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.product-info {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	background-color: rgba(255, 255, 255, 0.6);
+	transition: .5s ease;
+}
+.product-text {
+	margin-top: 20%;
+	color: black;
+}
+.product-zelda {
+	margin-top: 20px;
+}
+.product-zelda a {
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+	background-color: #F2D377;
+	transition: font-size .5s, padding-top .5s, padding-bottom .5s,
+	padding-right .5s, padding-left .5s, border-radius .5s;
+}
+.product-zelda a:hover {
+	text-decoration: none;
+	font-size: 15px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+.product-area:hover .product-info {
+	height: 100%;
+}
+.product-area:hover .img-producto {
+	width: 90%;
+	margin-left: 5%;
+}
+.categories-links {
+	padding: 0px;
+}
+.categories-links a {
+	font-size: 15px;
+	color: #5C6673;
+}
+.categories-links a:hover {
+	color: #9CD9C8;
+	text-decoration: none;
+}
+.categories-links span {
+	color: #8C8C8C;
+	font-size: 10px;
+}
+
+/* CSS PARA PRODUCTOS */
+
+.categ-tittle {
+	color: #F24607;
+}
+.categ-tittle:hover {
+	text-decoration: none;
+	color: #F27507;
+}
+.product-image img {
+	width: 100%;
+	height: auto;
+}
+.product-description {
+	text-align: justify;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.related-product-area {
+	padding: 5px;
+	height: 200px;
+}
+.related-product-area:hover .product-info {
+	height: 100%;
+}
+.related-product-area:hover .img-producto {
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* CSS PARA CONTÁCTENOS */
+
+.ubicacion-mapa-google iframe {
+	width: 100%;
+	height: 400px;
+}
+.form-section label {
+	color: #8C8C8C;
+}
+.form-section span {
+	color: red;
+}
+.name input, .email input, .telefono input {
+	width: 40%;
+	height: 40px;
+	margin-bottom: 20px;
+	background-color: #F2F2F2;
+	border: 1px solid #BFB5A8;
+	border-radius: 5px;
+}
+
+.name input:focus, .email input:focus, .telefono input:focus, .form-section textarea:focus {
+	background-color: #FFFBF5;
+	border: 1px solid #BFB5A8;
+}
+
+.form-section textarea {
+	width: 100%;
+	background-color: #F2F2F2;
+	border: 1px solid #BFB5A8;
+	border-radius: 5px;
+}
+.contact-submit {
+	margin-top: 20px;
+}
+.contact-submit input {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.contact-descrip {
+	text-align: justify;
+}
+
+/* CSS PARA BLOG */
+
+.post-img {
+	width: 100%;
+}
+.post-img img {
+	width: 100%;
+	height: auto;
+}
+.post-body {
+	text-align: justify;
+}
+.post-zelda {
+	height: 20px;
+}
+.post-zelda a {
+	color: #F24607;
+	text-decoration: none;
+	transition: font-size .5s;
+}
+.post-zelda a:hover {
+	color: #F27507;
+	font-size: 16px;
+}
+.recent-post {
+	display: table;
+	margin-bottom: 15px;
+	background-color: #F9F8F7;
+} 
+.recent-post-img {
+	float: left;
+	width: 40%;
+}
+.recent-post-info {
+	float: left;
+	width: 60%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.recent-post-categ {
+	color: #022E40;
+}
+.recent-post-title {
+	color: #025373; 
+}
+.category-area {
+	padding: 5px;
+	height: 180px;
+}
+.category-area:hover .product-info {
+	height: 100%;
+}
+.category-area:hover .img-producto {
+	width: 90%;
+	margin-left: 5%;
+}
+.all-post-buttom {
+	margin-left: 45%;
+	margin-top: 60px;
+}
+.all-post-buttom a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	background-color: #D97904;
+}
+.all-post-buttom a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #F29F05;
+}
+
+/* CSS PARA POST */
+
+.post-area {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.post-content {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #F9F8F7;
+}
+.author-section {
+	width: 100%;
+	display: table;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: solid 1px #A6A6A6;
+	border-bottom: solid 1px #A6A6A6;
+}
+.author-img {
+	float: left;
+	width: 10%;
+}
+.author-img img {
+	width: 60%;
+	height: auto;
+	border-radius: 50%;
+}
+.author-date {
+	float: left;
+	width: 90%;
+}
+.author-date p {
+	padding-top: 20px;
+}
+.post-date {
+	margin-left: 10px;
+}
+.post-text, .post-body {
+	padding-top: 10px;
+}
+
+/* CSS PARA POST CATEGORY */
+
+.section-area {
+	margin-left: 10%;
+}
+.post-list-zelda {
+	float: right;
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right: 15%;
+}
+.post-list-zelda a {
+	color: #F24607;
+	text-decoration: none;
+	transition: font-size .5s;
+}
+.post-list-zelda a:hover {
+	color: #F27507;
+	font-size: 16px;
+}
+.post-list-area {
+	height: 700px;
+	padding: 0px;
+	margin: 10px;
+	clear: right;
+	border-radius: 10px;
+	background-color: #F9F8F7;
+	box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.post-list-img img {
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.post-text {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.post-introduction {
+	overflow: auto;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.pagination-zelda {
+	margin-top: 100px;
+	margin-left: 45%;
+}
+.pagination-zelda a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	background-color: #D97904;
+}
+.pagination-zelda a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #F29F05;
+}
+
+/* CSS PARA SECCIÓN CLIENTES */
+
+.client-section {
+	padding: 0px;
+}
+.client-area {
+	height: 280px;
+	padding: 10px;
+	background-color: #F9F8F7;
+}
+.client-img img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+.client-info {
+	text-align: center;
+}
+
+/* CSS PARA SERVICIOS */
+
+.service-area {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+	border-radius: 20px;
+	background-color: #F9F8F7;
+	box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.service-text {
+	text-align: justify;
+}
+.service-img img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px){
+	
+	
+	/* CSS PARA NAVBAR */
+
+	.navbar {
+		height: 90px;
+		background-color: #FFEDE0;
+	}
+	.navbar.short {
+		height: 60px;
+	}
+	.navbar-brand {
+		position: relative;
+		left: 60px;
+	}
+	.navbar-brand.short {
+		bottom: 15px;
+	}
+	.navbar-brand img {
+		width: 100%;
+		height: auto;
+	}
+	.nav {
+		font-size: 12px;
+		position: relative;
+		right: 50px;
+		top: 35px;
+	}
+	.nav.short {
+		top: 20px;
+	}
+	.zelda {
+		color: #59544F;
+		margin-right: 20px;
+		padding-top: 7px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 7px;
+	}
+	.zelda.active {
+		border-bottom: solid #F2D377;
+
+	}
+	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+		border-radius: 5px;
+	}
+	.zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+	}
+	.dropdown-menu {
+		background-color: #161D26;
+		position: absolute;
+		top: 50px;
+		margin-right: 95px;
+	}
+	.dropdown-menu.short {
+		top: 35px;
+
+	}
+	.dropdown-menu.moved {
+		margin-right: 150px;
+	}
+	.dropdown-menu a {
+		display: block;
+		color: white;
+		background-color: #161D26;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.dropdown-menu a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #2C3540;
+	}
+
+	/* CSS PARA HOME */
+
+	/* CSS PARA PORTADAS_PRINCIPALES HOME */
+
+	.content {
+		margin-top: 70px;
+	}
+	.container {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+	.carousel-caption {
+		position: absolute;
+		bottom: 150px;
+		text-align: justify;
+	}
+	.text h2, .text h3, .text p {
+		color: white;
+	}
+	.dark h2, .dark h3, .dark p {
+		color: black;
+	}
+
+	/* CSS PARA SERVICIOS HOME */
+
+	.home-service-area {
+		padding: 20px;
+		height: 500px;
+		background-color: #F9F8F7;
+	}
+	.home-service-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* CSS PARA PRODUCTOS_DESTACADOS HOME */
+
+	.section-subtitle {
+		color: #8C0E03;
+		margin-top: 100px;
+	}
+	.section-subtitle h2 {
+		padding-bottom: 20px;
+		padding-left: 60px;
+		border-bottom: solid #F2D377;
+	}
+	.principals-prod {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.mostrador-prod {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: 300px;
+		background-color: #FFFBF5;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.19);
+	}
+	.caption-prod h3 {
+		color: #D97904;
+		font-size: 18px;
+		text-align: center;
+	}
+	.caption-prod h4 {
+		color: black;
+		font-size: 16px;
+		text-align: center;
+	}
+	.body-zelda {
+		text-align: center;
+	}
+	.body-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.body-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.img-prod {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+	}
+	.mostrador-prod:hover .img-prod {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/* CSS PARA NOSOTROS HOME */
+
+	.section-body {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.section-nosotros-text {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 10px;
+		text-align: justify;
+	}
+
+	/* CSS PARA NOSOTROS */
+
+	.section-title {
+		color: #8C0E03;
+		margin-top: 50px;
+	}
+	.section-title h1 {
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: solid #F2D377;
+	}
+	.section-text {
+		text-align: justify;
+	}
+
+	/* CSS PARA CATEGORIAS PRODUCTOS*/
+
+	.product-area {
+		padding: 10px;
+		height: 130px;
+	}
+	.img-producto {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	}
+	.product-info {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		transition: .5s ease;
+	}
+	.product-text {
+		margin-top: 20%;
+		color: black;
+	}
+	.product-text h3 {
+		font-size: 18px;
+	}
+	.product-zelda {
+		margin-top: 20px;
+	}
+	.product-zelda a {
+		color: white;
+		font-size: 12px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 5px;
+		background-color: #F2D377;
+		transition: font-size .5s, padding-top .5s, padding-bottom .5s,
+		padding-right .5s, padding-left .5s, border-radius .5s;
+	}
+	.product-zelda a:hover {
+		text-decoration: none;
+		font-size: 14px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-radius: 7px;
+	}
+	.product-area:hover .product-info {
+		height: 100%;
+	}
+	.product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.categories-links {
+		padding: 0px;
+	}
+	.categories-links a {
+		font-size: 13px;
+		color: #5C6673;
+	}
+	.categories-links a:hover {
+		color: #9CD9C8;
+		text-decoration: none;
+	}
+	.categories-links span {
+		color: #8C8C8C;
+		font-size: 10px;
+	}
+
+	/* CSS PARA PRODUCTOS */
+
+	.categ-tittle {
+		color: #F24607;
+	}
+	.categ-tittle:hover {
+		text-decoration: none;
+		color: #F27507;
+	}
+	.product-image img {
+		width: 100%
+		height: auto;
+	}
+	.product-description {
+		text-align: justify;
+		margin-left: 50px;
+	}
+	.related-product-area {
+		padding: 5px;
+		height: 200px;
+	}
+	.related-product-area:hover .product-info {
+		height: 100%;
+	}
+	.related-product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	/* CSS PARA CONTÁCTENOS */
+
+	.ubicacion-mapa-google iframe {
+		width: 100%;
+		height: 400px;
+	}
+	.form-section label {
+		color: #8C8C8C;
+	}
+	.form-section span {
+		color: red;
+	}
+	.name input, .email input, .telefono input {
+		width: 40%;
+		height: 40px;
+		margin-bottom: 20px;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+
+	.name input:focus, .email input:focus, .telefono input:focus, .form-section textarea:focus {
+		background-color: #FFFBF5;
+		border: 1px solid #BFB5A8;
+	}
+
+	.form-section textarea {
+		width: 100%;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+	.contact-submit {
+		margin-top: 20px;
+	}
+	.contact-submit input {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.contact-descrip {
+		text-align: justify;
+	}
+
+	/* CSS PARA BLOG */
+
+	.post-img {
+		width: 100%;
+	}
+	.post-img img {
+		width: 100%;
+		height: auto;
+	}
+	.post-body {
+		text-align: justify;
+	}
+	.post-zelda {
+		height: 20px;
+	}
+	.post-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.recent-post {
+		display: table;
+		margin-bottom: 15px;
+		background-color: #F9F8F7;
+	} 
+	.recent-post-img {
+		float: left;
+		width: 40%;
+	}
+	.recent-post-info {
+		float: left;
+		width: 60%;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+	.recent-post-categ {
+		color: #022E40;
+	}
+	.recent-post-title {
+		color: #025373; 
+	}
+	.category-area {
+		padding: 5px;
+		height: 180px;
+	}
+	.category-area:hover .product-info {
+		height: 100%;
+	}
+	.category-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.all-post-buttom {
+		margin-left: 45%;
+		margin-top: 60px;
+	}
+	.all-post-buttom a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.all-post-buttom a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA POST */
+
+	.post-area {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.post-content {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: #F9F8F7;
+	}
+	.author-section {
+		width: 100%;
+		display: table;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: solid 1px #A6A6A6;
+		border-bottom: solid 1px #A6A6A6;
+	}
+	.author-img {
+		float: left;
+		margin-top: 10px;
+		width: 10%;
+	}
+	.author-img img {
+		width: 60%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.author-date {
+		float: left;
+		width: 90%;
+	}
+	.author-date p {
+		padding-top: 20px;
+	}
+	.post-date {
+		margin-left: 10px;
+	}
+	.post-text, .post-body {
+		padding-top: 10px;
+	}
+
+	/* CSS PARA POST CATEGORY */
+
+	.section-area {
+		margin-left: 10%;
+	}
+	.post-list-zelda {
+		float: right;
+		height: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-right: 15%;
+	}
+	.post-list-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-list-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.post-list-area {
+		height: 600px;
+		padding: 0px;
+		margin: 10px;
+		clear: right;
+		border-radius: 10px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.post-list-img img {
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.post-text {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.post-introduction {
+		overflow: auto;
+		height: 200px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.pagination-zelda {
+		margin-top: 100px;
+		margin-left: 40%;
+	}
+	.pagination-zelda a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.pagination-zelda a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA SECCIÓN CLIENTES */
+
+	.client-section {
+		padding: 0px;
+	}
+	.client-area {
+		height: 280px;
+		padding: 10px;
+		background-color: #F9F8F7;
+	}
+	.client-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.client-info {
+		text-align: center;
+	}
+
+	/* CSS PARA SERVICIOS */
+
+	.service-area {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+		border-radius: 20px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.service-text {
+		text-align: justify;
+	}
+	.service-img img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	/* CSS PARA MENSAJES ADMIN */
+
+	/* CSS PARA NAVBAR */
+
+	.navbar {
+		height: 90px;
+		background-color: #FFEDE0;
+	}
+	.navbar.short {
+		height: 60px;
+	}
+	.navbar-brand {
+		position: relative;
+		top: 10px;
+		left: 20px;
+	}
+	.navbar-brand.short {
+		top: auto;
+		bottom: 5px;
+	}
+	.navbar-brand img {
+		width: 80%;
+		height: auto;
+	}
+	.nav {
+		font-size: 10px;
+		position: relative;
+		right: 20px;
+		top: 40px;
+	}
+	.nav.short {
+		top: 20px;
+	}
+	.zelda {
+		color: #59544F;
+		margin-right: 5px;
+		padding-top: 7px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 7px;
+	}
+	.zelda.active {
+		border-bottom: solid #F2D377;
+
+	}
+	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+		border-radius: 5px;
+	}
+	.zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+	}
+	.dropdown-menu {
+		background-color: #161D26;
+		position: absolute;
+		top: 50px;
+		margin-right: 70px;
+	}
+	.dropdown-menu.short {
+		top: 35px;
+	}
+	.dropdown-menu.moved {
+		margin-right: 100px;
+	}
+	.dropdown-menu a {
+		font-size: 10px;
+		display: block;
+		color: white;
+		background-color: #161D26;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.dropdown-menu a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #2C3540;
+	}
+
+	/* CSS PARA FOOTER */
+
+	.footer {
+		margin-top: 100px;
+		text-align: justify;
+		color: #8C8C8C;
+	}
+	.footer-bottom {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: #8C8C8C;
+	}
+	.contacto-footer {
+		padding: 0px;
+	}
+	.zelda span {
+		font-size: 10px;
+	}
+	/* CSS PARA HOME */
+
+	/* CSS PARA PORTADAS_PRINCIPALES HOME */
+
+	.content {
+		margin-top: 70px;
+	}
+	.container {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+	.carousel-image img {
+		width: 100%;
+		height: 350px;
+	}
+	.carousel-caption {
+		position: absolute;
+		bottom: 20px;
+		text-align: justify;
+	}
+	.text h2, .text h3, .text p {
+		color: white;
+	}
+	.dark h2, .dark h3, .dark p {
+		color: black;
+	}
+
+	/* CSS PARA SERVICIOS HOME */
+
+	.home-service-area {
+		padding: 20px;
+		height: 500px;
+		background-color: #F9F8F7;
+	}
+	.home-service-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* CSS PARA PRODUCTOS_DESTACADOS HOME */
+
+	.section-subtitle {
+		color: #8C0E03;
+		margin-top: 100px;
+	}
+	.section-subtitle h2 {
+		padding-bottom: 20px;
+		padding-left: 60px;
+		border-bottom: solid #F2D377;
+	}
+	.principals-prod {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.mostrador-prod {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: 280px;
+		background-color: #FFFBF5;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.19);
+	}
+	.caption-prod h3 {
+		color: #D97904;
+		text-align: center;
+	}
+	.caption-prod h4 {
+		color: black;
+		text-align: center;
+	}
+	.body-zelda {
+		text-align: center;
+	}
+	.body-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.body-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.img-prod {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+	}
+	.mostrador-prod:hover .img-prod {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/* CSS PARA NOSOTROS HOME */
+
+	.section-body {
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.section-nosotros-text {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 10px;
+		text-align: justify;
+	}
+
+	/* CSS PARA NOSOTROS */
+
+	.section-title {
+		color: #8C0E03;
+		margin-top: 50px;
+	}
+	.section-title h1 {
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: solid #F2D377;
+	}
+	.section-text {
+		text-align: justify;
+	}
+
+	/* CSS PARA CATEGORIAS PRODUCTOS*/
+
+	.product-area {
+		padding: 10px;
+		height: 120px;
+	}
+	.img-producto {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	}
+	.product-info {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		transition: .5s ease;
+	}
+	.product-text {
+		margin-top: 20%;
+		color: black;
+	}
+	.product-text h3 {
+		font-size: 16px;
+	}
+	.product-zelda {
+		margin-top: 20px;
+	}
+	.product-zelda a {
+		color: white;
+		font-size: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 5px;
+		background-color: #F2D377;
+		transition: font-size .5s, padding-top .5s, padding-bottom .5s,
+		padding-right .5s, padding-left .5s, border-radius .5s;
+	}
+	.product-zelda a:hover {
+		text-decoration: none;
+		font-size: 12px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-radius: 7px;
+	}
+	.product-area:hover .product-info {
+		height: 100%;
+	}
+	.product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.section-minititle h3 {
+		font-size: 20px;
+	}
+	.categories-links {
+		padding: 0px;
+	}
+	.categories-links a {
+		font-size: 12px;
+		color: #5C6673;
+	}
+	.categories-links a:hover {
+		color: #9CD9C8;
+		text-decoration: none;
+	}
+	.categories-links span {
+		color: #8C8C8C;
+		font-size: 10px;
+	}
+
+	/* CSS PARA PRODUCTOS */
+
+	.categ-tittle {
+		color: #F24607;
+	}
+	.categ-tittle:hover {
+		text-decoration: none;
+		color: #F27507;
+	}
+	.product-image img {
+		width: 100%;
+		height: auto;
+	}
+	.product-description {
+		text-align: justify;
+		margin-left: 50px;
+	}
+	.related-product-area {
+		padding: 5px;
+		height: 200px;
+	}
+	.related-product-area:hover .product-info {
+		height: 100%;
+	}
+	.related-product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	/* CSS PARA CONTÁCTENOS */
+
+	.ubicacion-mapa-google iframe {
+		width: 100%;
+		height: 400px;
+	}
+	.form-section label {
+		color: #8C8C8C;
+	}
+	.form-section span {
+		color: red;
+	}
+	.name input, .email input, .telefono input {
+		width: 40%;
+		height: 40px;
+		margin-bottom: 20px;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+
+	.name input:focus, .email input:focus, .telefono input:focus, .form-section textarea:focus {
+		background-color: #FFFBF5;
+		border: 1px solid #BFB5A8;
+	}
+
+	.form-section textarea {
+		width: 100%;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+	.contact-submit {
+		margin-top: 20px;
+	}
+	.contact-submit input {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.contacto-info p {
+		font-size: 12px;
+	}
+	.contact-descrip {
+		text-align: justify;
+	}
+
+	/* CSS PARA BLOG */
+
+	.post-img {
+		width: 100%;
+	}
+	.post-img img {
+		width: 100%;
+		height: auto;
+	}
+	.post-body {
+		text-align: justify;
+	}
+	.post-zelda {
+		height: 20px;
+	}
+	.post-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.recent-post {
+		display: table;
+		margin-bottom: 15px;
+		background-color: #F9F8F7;
+	} 
+	.recent-post-img {
+		float: left;
+		width: 40%;
+	}
+	.recent-post-info {
+		float: left;
+		width: 60%;
+		font-size: 12px;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+	.recent-post-categ {
+		color: #022E40;
+	}
+	.recent-post-title {
+		color: #025373; 
+	}
+	.category-area {
+		padding: 5px;
+		height: 180px;
+	}
+	.category-area:hover .product-info {
+		height: 100%;
+	}
+	.category-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.all-post-buttom {
+		margin-left: 40%;
+		margin-top: 60px;
+	}
+	.all-post-buttom a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.all-post-buttom a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA POST */
+
+	.post-area {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.post-content {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: #F9F8F7;
+	}
+	.author-section {
+		width: 100%;
+		display: table;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: solid 1px #A6A6A6;
+		border-bottom: solid 1px #A6A6A6;
+	}
+	.author-img {
+		float: left;
+		width: 10%;
+	}
+	.author-img img {
+		width: 60%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.author-date {
+		float: left;
+		width: 90%;
+	}
+	.author-date p {
+		padding-top: 20px;
+	}
+	.post-date {
+		margin-left: 10px;
+	}
+	.post-text, .post-body {
+		padding-top: 10px;
+	}
+
+	/* CSS PARA POST CATEGORY */
+
+	.section-area {
+		margin-left: 10%;
+	}
+	.post-list-zelda {
+		float: right;
+		height: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-right: 15%;
+	}
+	.post-list-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-list-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.post-list-area {
+		height: 570px;
+		padding: 0px;
+		margin: 10px;
+		clear: right;
+		border-radius: 10px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.post-list-img img {
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.post-text {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.post-introduction {
+		overflow: auto;
+		height: 200px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.pagination-zelda {
+		margin-top: 100px;
+		margin-left: 38%;
+	}
+	.pagination-zelda a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.pagination-zelda a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA SECCIÓN CLIENTES */
+
+	.client-section {
+		padding: 0px;
+	}
+	.client-area {
+		height: 230px;
+		padding: 10px;
+		background-color: #F9F8F7;
+	}
+	.client-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.client-info {
+		text-align: center;
+	}
+	.client-info h4 {
+		font-size: 14px;
+	}
+	.client-info h5 {
+		font-size: 12px;
+	}
+
+	/* CSS PARA SERVICIOS */
+
+	.service-area {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+		border-radius: 20px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.service-text {
+		text-align: justify;
+	}
+	.service-img img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIAQUERY PARA MOVIL L */
+
+@media screen and (max-width: 425px){
+	/* CSS PARA MENSAJES ADMIN */
+
+	/* CSS PARA NAVBAR */
+
+	.navbar {
+		height: 60px;
+		background-color: #FFEDE0;
+	}
+	.navbar.short {
+		height: 60px;
+	}
+	.navbar-brand {
+		position: relative;
+		top: auto;
+		bottom: 5px;
+		left: 20px;
+	}
+	.navbar-brand.short {
+		top: auto;
+		bottom: 5px;
+	}
+	.navbar-brand img {
+		width: 80%;
+		height: auto;
+	}
+	.navbar-header button {
+		margin-top: 15px;
+		margin-right: 10%;
+	}
+	.collapse {
+		background-color: white;
+	}
+	.nav {
+		font-size: 8px;
+		position: relative;
+		right: auto;
+		left: 10%;
+		top: 0px;
+	}
+	.nav.short {
+		top: 0px;
+	}
+	.zelda {
+		color: #59544F;
+		margin-right: 5px;
+		padding-top: 5px;
+		padding-left: 7px;
+		padding-right: 7px;
+		padding-bottom: 5px;
+	}
+	.zelda.active {
+		border-bottom: solid #F2D377;
+
+	}
+	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+		border-radius: 5px;
+	}
+	.zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+	}
+	.dropdown-menu {
+		background-color: #161D26;
+		position: fixed;
+		top: 85px;
+		margin-right: auto;
+		margin-left: 50%;
+		margin-bottom: 10px;
+	}
+	.dropdown-menu.short {
+		top: 85px;
+	}
+	.dropdown-menu.moved {
+		margin-right: auto;
+		margin-left: 50%;
+	}
+	.dropdown-menu a {
+		font-size: 10px;
+		display: block;
+		color: white;
+		background-color: #161D26;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.dropdown-menu a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #2C3540;
+	}
+
+	/* CSS PARA FOOTER */
+
+	.footer {
+		margin-top: 100px;
+		text-align: justify;
+		color: #8C8C8C;
+	}
+	.footer-bottom {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: #8C8C8C;
+	}
+	.contacto-footer {
+		padding: 0px;
+	}
+	.zelda span {
+		font-size: 10px;
+	}
+	/* CSS PARA HOME */
+
+	/* CSS PARA PORTADAS_PRINCIPALES HOME */
+
+	.content {
+		margin-top: 60px;
+	}
+	.container {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+	.carousel-image img {
+		width: 100%;
+		height: 200px;
+	}
+	.carousel-caption {
+		position: absolute;
+		bottom: 10px;
+		text-align: justify;
+	}
+	.carousel-caption h2 {
+		font-size: 15px;
+	}
+	.carousel-caption h3 {
+		font-size: 13px;
+	}
+	.carousel-caption p {
+		font-size: 10px;
+	}
+	.text h2, .text h3, .text p {
+		color: white;
+	}
+	.dark h2, .dark h3, .dark p {
+		color: black;
+	}
+
+	/* CSS PARA SERVICIOS HOME */
+
+	.home-service-area {
+		padding: 20px;
+		height: auto;
+		background-color: #F9F8F7;
+	}
+	.home-service-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* CSS PARA PRODUCTOS_DESTACADOS HOME */
+
+	.section-subtitle {
+		color: #8C0E03;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.section-subtitle h2 {
+		padding-bottom: 20px;
+		padding-left: 0px;
+		border-bottom: solid #F2D377;
+	}
+	.principals-prod {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.mostrador-prod {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: 350px;
+		background-color: #FFFBF5;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.19);
+	}
+	.caption-prod h3 {
+		color: #D97904;
+		text-align: center;
+	}
+	.caption-prod h4 {
+		color: black;
+		text-align: center;
+	}
+	.body-zelda {
+		text-align: center;
+	}
+	.body-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.body-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.img-prod {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+	}
+	.mostrador-prod:hover .img-prod {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/* CSS PARA NOSOTROS HOME */
+
+	.section-body {
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.section-nosotros-text {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+
+	/* CSS PARA NOSOTROS */
+
+	.section-title {
+		color: #8C0E03;
+		margin-top: 50px;
+	}
+	.section-title h1 {
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: solid #F2D377;
+	}
+	.section-text {
+		text-align: justify;
+	}
+
+	/* CSS PARA CATEGORIAS PRODUCTOS*/
+
+	.product-area {
+		padding: 20px;
+		height: auto;
+	}
+	.img-producto {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	}
+	.product-info {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		transition: .5s ease;
+	}
+	.product-text {
+		margin-top: 20%;
+		color: black;
+	}
+	.product-text h3 {
+		font-size: 28px;
+	}
+	.product-zelda {
+		margin-top: 20px;
+	}
+	.product-zelda a {
+		color: white;
+		font-size: 18px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 5px;
+		background-color: #F2D377;
+		transition: font-size .5s, padding-top .5s, padding-bottom .5s,
+		padding-right .5s, padding-left .5s, border-radius .5s;
+	}
+	.product-zelda a:hover {
+		text-decoration: none;
+		font-size: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-radius: 7px;
+	}
+	.product-area:hover .product-info {
+		height: 100%;
+	}
+	.product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.section-minititle h3 {
+		font-size: 25px;
+	}
+	.categories-links {
+		padding: 0px;
+	}
+	.categories-links a {
+		font-size: 15px;
+		color: #5C6673;
+	}
+	.categories-links a:hover {
+		color: #9CD9C8;
+		text-decoration: none;
+	}
+	.categories-links span {
+		color: #8C8C8C;
+		font-size: 10px;
+	}
+
+	/* CSS PARA PRODUCTOS */
+
+	.categ-tittle {
+		color: #F24607;
+	}
+	.categ-tittle:hover {
+		text-decoration: none;
+		color: #F27507;
+	}
+	.product-image img {
+		width: 100%;
+		height: auto;
+	}
+	.product-description {
+		text-align: justify;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	.related-product-area {
+		padding: 20px;
+		height: auto;
+	}
+	.related-product-area:hover .product-info {
+		height: 100%;
+	}
+	.related-product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	/* CSS PARA CONTÁCTENOS */
+
+	.ubicacion-mapa-google iframe {
+		width: 100%;
+		height: 400px;
+	}
+	.form-section label {
+		color: #8C8C8C;
+	}
+	.form-section span {
+		color: red;
+	}
+	.name input, .email input, .telefono input {
+		width: 100%;
+		height: 40px;
+		margin-bottom: 20px;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+
+	.name input:focus, .email input:focus, .telefono input:focus, .form-section textarea:focus {
+		background-color: #FFFBF5;
+		border: 1px solid #BFB5A8;
+	}
+
+	.form-section textarea {
+		width: 100%;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+	.contact-submit {
+		margin-top: 20px;
+	}
+	.contact-submit input {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.contacto-info p {
+		font-size: 12px;
+	}
+	.contact-descrip {
+		text-align: justify;
+	}
+
+	/* CSS PARA BLOG */
+
+	.post-img {
+		width: 100%;
+	}
+	.post-img img {
+		width: 100%;
+		height: auto;
+	}
+	.post-body {
+		text-align: justify;
+	}
+	.post-zelda {
+		height: 20px;
+	}
+	.post-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.recent-post {
+		display: table;
+		margin-bottom: 15px;
+		background-color: #F9F8F7;
+	} 
+	.recent-post-img {
+		float: left;
+		width: 40%;
+	}
+	.recent-post-info {
+		float: left;
+		width: 60%;
+		font-size: 13px;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+	.recent-post-categ {
+		color: #022E40;
+	}
+	.recent-post-title {
+		color: #025373; 
+	}
+	.category-area {
+		padding: 20px;
+		height: auto;
+	}
+	.category-area:hover .product-info {
+		height: 100%;
+	}
+	.category-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.all-post-buttom {
+		margin-left: 33%;
+		margin-top: 60px;
+	}
+	.all-post-buttom a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.all-post-buttom a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA POST */
+
+	.post-area {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.post-content {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #F9F8F7;
+	}
+	.author-section {
+		width: 100%;
+		display: table;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: solid 1px #A6A6A6;
+		border-bottom: solid 1px #A6A6A6;
+	}
+	.author-img {
+		float: left;
+		width: 10%;
+	}
+	.author-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.author-date {
+		float: left;
+		width: 90%;
+	}
+	.author-date p {
+		padding-top: 20px;
+		margin-left: 10px;
+	}
+	.post-date {
+		margin-left: 10px;
+	}
+	.post-text, .post-body {
+		padding-top: 10px;
+	}
+
+	/* CSS PARA POST CATEGORY */
+
+	.section-area {
+		margin-left: 0%;
+	}
+	.post-list-zelda {
+		float: right;
+		height: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-right: 5%;
+	}
+	.post-list-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-list-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.post-list-area {
+		height: auto;
+		padding: 0px;
+		margin: 20px;
+		clear: right;
+		border-radius: 10px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.post-list-img img {
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.post-text {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+	}
+	.post-introduction {
+		overflow: auto;
+		height: 200px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.pagination-zelda {
+		margin-top: 100px;
+		margin-left: 25%;
+	}
+	.pagination-zelda a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.pagination-zelda a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA SECCIÓN CLIENTES */
+
+	.client-section {
+		padding: 0px;
+	}
+	.client-area {
+		height: auto;
+		padding: 10px;
+		background-color: #F9F8F7;
+	}
+	.client-img img {
+		width: 40%;
+		height: auto;
+		margin-left: 30%;
+		border-radius: 50%;
+	}
+	.client-info {
+		text-align: center;
+	}
+	.client-info h4 {
+		font-size: 20px;
+	}
+	.client-info h5 {
+		font-size: 18px;
+	}
+
+	/* CSS PARA SERVICIOS */
+
+	.service-area {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+		border-radius: 20px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.service-text {
+		text-align: justify;
+	}
+	.service-img img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIAQUERY PARA MOVIL M */
+
+@media screen and (max-width: 375px){
+	/* CSS PARA MENSAJES ADMIN */
+
+	/* CSS PARA NAVBAR */
+
+	.navbar {
+		height: 60px;
+		background-color: #FFEDE0;
+	}
+	.navbar.short {
+		height: 60px;
+	}
+	.navbar-brand {
+		position: relative;
+		top: auto;
+		bottom: 5px;
+		left: 20px;
+	}
+	.navbar-brand.short {
+		top: auto;
+		bottom: 5px;
+	}
+	.navbar-brand img {
+		width: 80%;
+		height: auto;
+	}
+	.navbar-header button {
+		margin-top: 15px;
+		margin-right: 10%;
+	}
+	.collapse {
+		background-color: white;
+	}
+	.nav {
+		font-size: 8px;
+		position: relative;
+		right: auto;
+		left: 5%;
+		top: 0px;
+	}
+	.nav.short {
+		top: 0px;
+	}
+	.zelda {
+		color: #59544F;
+		margin-right: 5px;
+		padding-top: 5px;
+		padding-left: 7px;
+		padding-right: 7px;
+		padding-bottom: 5px;
+	}
+	.zelda.active {
+		border-bottom: solid #F2D377;
+
+	}
+	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+		border-radius: 5px;
+	}
+	.zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+	}
+	.dropdown-menu {
+		background-color: #161D26;
+		position: fixed;
+		top: 85px;
+		margin-right: auto;
+		margin-left: 50%;
+		margin-bottom: 10px;
+	}
+	.dropdown-menu.short {
+		top: 85px;
+	}
+	.dropdown-menu.moved {
+		margin-right: auto;
+		margin-left: 50%;
+	}
+	.dropdown-menu a {
+		font-size: 10px;
+		display: block;
+		color: white;
+		background-color: #161D26;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.dropdown-menu a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #2C3540;
+	}
+
+	/* CSS PARA FOOTER */
+
+	.footer {
+		margin-top: 100px;
+		text-align: justify;
+		color: #8C8C8C;
+	}
+	.footer-bottom {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: #8C8C8C;
+	}
+	.contacto-footer {
+		padding: 0px;
+	}
+	.zelda span {
+		font-size: 10px;
+	}
+	/* CSS PARA HOME */
+
+	/* CSS PARA PORTADAS_PRINCIPALES HOME */
+
+	.content {
+		margin-top: 60px;
+	}
+	.container {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+	.carousel-image img {
+		width: 100%;
+		height: 150px;
+	}
+	.carousel-caption {
+		position: absolute;
+		bottom: 10px;
+		text-align: justify;
+	}
+	.carousel-caption h2 {
+		font-size: 4vw;
+	}
+	.carousel-caption h3 {
+		font-size: 3vw;
+	}
+	.carousel-caption p {
+		font-size: 2vw;
+	}
+	.text h2, .text h3, .text p {
+		color: white;
+	}
+	.dark h2, .dark h3, .dark p {
+		color: black;
+	}
+
+	/* CSS PARA SERVICIOS HOME */
+
+	.home-service-area {
+		padding: 20px;
+		height: auto;
+		background-color: #F9F8F7;
+	}
+	.home-service-img img {
+		width: 100%;
+		height: auto;
+	}
+	.service-info h3 {
+		font-size: 22px;
+	}
+
+	/* CSS PARA PRODUCTOS_DESTACADOS HOME */
+
+	.section-subtitle {
+		color: #8C0E03;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.section-subtitle h2 {
+		font-size: 28px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		border-bottom: solid #F2D377;
+	}
+	.principals-prod {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.mostrador-prod {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: 350px;
+		background-color: #FFFBF5;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.19);
+	}
+	.caption-prod h3 {
+		color: #D97904;
+		text-align: center;
+	}
+	.caption-prod h4 {
+		color: black;
+		text-align: center;
+	}
+	.body-zelda {
+		text-align: center;
+	}
+	.body-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.body-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.img-prod {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+	}
+	.mostrador-prod:hover .img-prod {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/* CSS PARA NOSOTROS HOME */
+
+	.section-body {
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.section-nosotros-text {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+
+	/* CSS PARA NOSOTROS */
+
+	.section-title {
+		color: #8C0E03;
+		margin-top: 50px;
+	}
+	.section-title h1 {
+		font-size: 32px;
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: solid #F2D377;
+	}
+	.section-text {
+		text-align: justify;
+	}
+
+	/* CSS PARA CATEGORIAS PRODUCTOS*/
+
+	.product-area {
+		padding: 20px;
+		height: auto;
+	}
+	.img-producto {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	}
+	.product-info {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		transition: .5s ease;
+	}
+	.product-text {
+		margin-top: 20%;
+		color: black;
+	}
+	.product-text h3 {
+		font-size: 28px;
+	}
+	.product-zelda {
+		margin-top: 20px;
+	}
+	.product-zelda a {
+		color: white;
+		font-size: 18px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 5px;
+		background-color: #F2D377;
+		transition: font-size .5s, padding-top .5s, padding-bottom .5s,
+		padding-right .5s, padding-left .5s, border-radius .5s;
+	}
+	.product-zelda a:hover {
+		text-decoration: none;
+		font-size: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-radius: 7px;
+	}
+	.product-area:hover .product-info {
+		height: 100%;
+	}
+	.product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.section-minititle h3 {
+		font-size: 25px;
+	}
+	.categories-links {
+		padding: 0px;
+	}
+	.categories-links a {
+		font-size: 15px;
+		color: #5C6673;
+	}
+	.categories-links a:hover {
+		color: #9CD9C8;
+		text-decoration: none;
+	}
+	.categories-links span {
+		color: #8C8C8C;
+		font-size: 10px;
+	}
+
+	/* CSS PARA PRODUCTOS */
+
+	.categ-tittle {
+		color: #F24607;
+	}
+	.categ-tittle:hover {
+		text-decoration: none;
+		color: #F27507;
+	}
+	.product-image img {
+		width: 100%;
+		height: auto;
+	}
+	.product-description {
+		text-align: justify;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	.related-product-area {
+		padding: 20px;
+		height: auto;
+	}
+	.related-product-area:hover .product-info {
+		height: 100%;
+	}
+	.related-product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	/* CSS PARA CONTÁCTENOS */
+
+	.ubicacion-mapa-google iframe {
+		width: 100%;
+		height: 400px;
+	}
+	.form-section label {
+		color: #8C8C8C;
+	}
+	.form-section span {
+		color: red;
+	}
+	.name input, .email input, .telefono input {
+		width: 100%;
+		height: 40px;
+		margin-bottom: 20px;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+
+	.name input:focus, .email input:focus, .telefono input:focus, .form-section textarea:focus {
+		background-color: #FFFBF5;
+		border: 1px solid #BFB5A8;
+	}
+
+	.form-section textarea {
+		width: 100%;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+	.contact-submit {
+		margin-top: 20px;
+	}
+	.contact-submit input {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.contacto-info p {
+		font-size: 14px;
+	}
+	.contact-descrip {
+		text-align: justify;
+	}
+
+	/* CSS PARA BLOG */
+
+	.post-img {
+		width: 100%;
+	}
+	.post-img img {
+		width: 100%;
+		height: auto;
+	}
+	.post-body {
+		text-align: justify;
+	}
+	.post-zelda {
+		height: 20px;
+	}
+	.post-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.recent-post {
+		display: table;
+		margin-bottom: 15px;
+		background-color: #F9F8F7;
+	} 
+	.recent-post-img {
+		float: left;
+		width: 40%;
+	}
+	.recent-post-info {
+		float: left;
+		width: 60%;
+		font-size: 12px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.recent-post-categ {
+		color: #022E40;
+	}
+	.recent-post-title {
+		color: #025373; 
+	}
+	.category-area {
+		padding: 20px;
+		height: auto;
+	}
+	.category-area:hover .product-info {
+		height: 100%;
+	}
+	.category-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.all-post-buttom {
+		margin-left: 30%;
+		margin-top: 60px;
+	}
+	.all-post-buttom a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.all-post-buttom a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA POST */
+
+	.post-area {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.post-content {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #F9F8F7;
+	}
+	.author-section {
+		width: 100%;
+		display: table;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: solid 1px #A6A6A6;
+		border-bottom: solid 1px #A6A6A6;
+	}
+	.author-img {
+		float: left;
+		width: 10%;
+	}
+	.author-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.author-date {
+		float: left;
+		width: 90%;
+	}
+	.author-date p {
+		padding-top: 15px;
+		margin-left: 10px;
+	}
+	.post-date {
+		margin-left: 10px;
+	}
+	.post-text, .post-body {
+		padding-top: 10px;
+	}
+
+	/* CSS PARA POST CATEGORY */
+
+	.section-area {
+		margin-left: 0%;
+	}
+	.post-list-zelda {
+		float: right;
+		height: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-right: 5%;
+	}
+	.post-list-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-list-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.post-list-area {
+		height: auto;
+		padding: 0px;
+		margin: 20px;
+		clear: right;
+		border-radius: 10px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.post-list-img img {
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.post-text {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+	}
+	.post-introduction {
+		overflow: auto;
+		height: 200px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.pagination-zelda {
+		margin-top: 100px;
+		margin-left: 25%;
+	}
+	.pagination-zelda a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.pagination-zelda a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA SECCIÓN CLIENTES */
+
+	.client-section {
+		padding: 0px;
+	}
+	.client-area {
+		height: auto;
+		padding: 10px;
+		background-color: #F9F8F7;
+	}
+	.client-img img {
+		width: 50%;
+		height: auto;
+		margin-left: 25%;
+		border-radius: 50%;
+	}
+	.client-info {
+		text-align: center;
+	}
+	.client-info h4 {
+		font-size: 20px;
+	}
+	.client-info h5 {
+		font-size: 18px;
+	}
+
+	/* CSS PARA SERVICIOS */
+
+	.service-area {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+		border-radius: 20px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.service-title h2 {
+		font-size: 28px;
+	}
+	.service-text {
+		text-align: justify;
+	}
+	.service-img img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIAQUERY PARA MOVIL S */
+
+@media screen and (max-width: 320px){
+	/* CSS PARA MENSAJES ADMIN */
+
+	/* CSS PARA NAVBAR */
+
+	.navbar {
+		height: 60px;
+		background-color: #FFEDE0;
+	}
+	.navbar.short {
+		height: 60px;
+	}
+	.navbar-brand {
+		position: relative;
+		top: auto;
+		bottom: 10px;
+		left: 0px;
+	}
+	.navbar-brand.short {
+		top: auto;
+		bottom: 10px;
+	}
+	.navbar-brand img {
+		width: 90%;
+		height: auto;
+	}
+	.navbar-header button {
+		margin-top: 15px;
+		margin-right: 7%;
+	}
+	.collapse {
+		background-color: white;
+	}
+	.nav {
+		font-size: 7px;
+		position: relative;
+		right: auto;
+		left: 8%;
+		top: 0px;
+	}
+	.nav.short {
+		top: 0px;
+	}
+	.zelda {
+		color: #59544F;
+		margin-right: 2px;
+		padding-top: 4px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 4px;
+	}
+	.zelda.active {
+		border-bottom: solid #F2D377;
+
+	}
+	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+		border-radius: 5px;
+	}
+	.zelda:active, .zelda:focus, .zelda:visited {
+		text-decoration: none;
+		color: white;
+		background-color: #F2D377;
+	}
+	.dropdown-menu {
+		background-color: #161D26;
+		position: fixed;
+		top: 85px;
+		margin-right: auto;
+		margin-left: 30%;
+		margin-bottom: 10px;
+	}
+	.dropdown-menu.short {
+		top: 85px;
+	}
+	.dropdown-menu.moved {
+		margin-right: auto;
+		margin-left: 30%;
+	}
+	.dropdown-menu a {
+		font-size: 10px;
+		display: block;
+		color: white;
+		background-color: #161D26;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.dropdown-menu a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #2C3540;
+	}
+
+	/* CSS PARA FOOTER */
+
+	.footer {
+		margin-top: 100px;
+		text-align: justify;
+		color: #8C8C8C;
+	}
+	.footer-bottom {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: #8C8C8C;
+	}
+	.contacto-footer {
+		padding: 0px;
+	}
+	.zelda span {
+		font-size: 10px;
+	}
+	/* CSS PARA HOME */
+
+	/* CSS PARA PORTADAS_PRINCIPALES HOME */
+
+	.content {
+		margin-top: 60px;
+	}
+	.container {
+		width: 100%;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+	.carousel-image img {
+		width: 100%;
+		height: 140px;
+	}
+	.carousel-caption {
+		position: absolute;
+		bottom: 10px;
+		text-align: justify;
+	}
+	.carousel-caption h2 {
+		font-size: 4vw;
+	}
+	.carousel-caption h3 {
+		font-size: 3vw;
+	}
+	.carousel-caption p {
+		font-size: 2vw;
+	}
+	.text h2, .text h3, .text p {
+		color: white;
+	}
+	.dark h2, .dark h3, .dark p {
+		color: black;
+	}
+
+	/* CSS PARA SERVICIOS HOME */
+
+	.home-service-area {
+		padding: 20px;
+		height: auto;
+		background-color: #F9F8F7;
+	}
+	.home-service-img img {
+		width: 100%;
+		height: auto;
+	}
+	.service-info h3 {
+		font-size: 21px;
+	}
+
+	/* CSS PARA PRODUCTOS_DESTACADOS HOME */
+
+	.section-subtitle {
+		color: #8C0E03;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.section-subtitle h2 {
+		font-size: 26px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		border-bottom: solid #F2D377;
+	}
+	.principals-prod {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.mostrador-prod {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+		height: auto;
+		background-color: #FFFBF5;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.19);
+	}
+	.caption-prod h3 {
+		color: #D97904;
+		text-align: center;
+	}
+	.caption-prod h4 {
+		color: black;
+		text-align: center;
+	}
+	.body-zelda {
+		text-align: center;
+	}
+	.body-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.body-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.img-prod {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+	}
+	.mostrador-prod:hover .img-prod {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/* CSS PARA NOSOTROS HOME */
+
+	.section-body {
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.section-nosotros-text {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+
+	/* CSS PARA NOSOTROS */
+
+	.section-title {
+		color: #8C0E03;
+		margin-top: 50px;
+	}
+	.section-title h1 {
+		font-size: 28px;
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: solid #F2D377;
+	}
+	.section-text {
+		text-align: justify;
+	}
+
+	/* CSS PARA CATEGORIAS PRODUCTOS*/
+
+	.product-area {
+		padding: 20px;
+		height: auto;
+	}
+	.img-producto {
+		width: 100%;
+		height: auto;
+		transition: width .5s, margin-left .5s;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	}
+	.product-info {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+		height: 0;
+		background-color: rgba(255, 255, 255, 0.6);
+		transition: .5s ease;
+	}
+	.product-text {
+		margin-top: 20%;
+		color: black;
+	}
+	.product-text h3 {
+		font-size: 22px;
+	}
+	.product-zelda {
+		margin-top: 20px;
+	}
+	.product-zelda a {
+		color: white;
+		font-size: 18px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 5px;
+		background-color: #F2D377;
+		transition: font-size .5s, padding-top .5s, padding-bottom .5s,
+		padding-right .5s, padding-left .5s, border-radius .5s;
+	}
+	.product-zelda a:hover {
+		text-decoration: none;
+		font-size: 20px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-radius: 7px;
+	}
+	.product-area:hover .product-info {
+		height: 100%;
+	}
+	.product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.section-minititle h3 {
+		font-size: 25px;
+	}
+	.categories-links {
+		padding: 0px;
+	}
+	.categories-links a {
+		font-size: 15px;
+		color: #5C6673;
+	}
+	.categories-links a:hover {
+		color: #9CD9C8;
+		text-decoration: none;
+	}
+	.categories-links span {
+		color: #8C8C8C;
+		font-size: 10px;
+	}
+
+	/* CSS PARA PRODUCTOS */
+
+	.categ-tittle {
+		color: #F24607;
+	}
+	.categ-tittle:hover {
+		text-decoration: none;
+		color: #F27507;
+	}
+	.product-image img {
+		width: 100%;
+		height: auto;
+	}
+	.product-description {
+		text-align: justify;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	.related-product-area {
+		padding: 20px;
+		height: auto;
+	}
+	.related-product-area:hover .product-info {
+		height: 100%;
+	}
+	.related-product-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	/* CSS PARA CONTÁCTENOS */
+
+	.ubicacion-mapa-google iframe {
+		width: 100%;
+		height: 400px;
+	}
+	.form-section label {
+		color: #8C8C8C;
+	}
+	.form-section span {
+		color: red;
+	}
+	.name input, .email input, .telefono input {
+		width: 100%;
+		height: 40px;
+		margin-bottom: 20px;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+
+	.name input:focus, .email input:focus, .telefono input:focus, .form-section textarea:focus {
+		background-color: #FFFBF5;
+		border: 1px solid #BFB5A8;
+	}
+
+	.form-section textarea {
+		width: 100%;
+		background-color: #F2F2F2;
+		border: 1px solid #BFB5A8;
+		border-radius: 5px;
+	}
+	.contact-submit {
+		margin-top: 20px;
+	}
+	.contact-submit input {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+	}
+	.contacto-info p {
+		font-size: 14px;
+	}
+	.contact-descrip {
+		text-align: justify;
+	}
+
+	/* CSS PARA BLOG */
+
+	.post-img {
+		width: 100%;
+	}
+	.post-img img {
+		width: 100%;
+		height: auto;
+	}
+	.post-body {
+		text-align: justify;
+	}
+	.post-zelda {
+		height: 20px;
+	}
+	.post-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.recent-post {
+		display: table;
+		margin-bottom: 15px;
+		background-color: #F9F8F7;
+	} 
+	.recent-post-img {
+		float: left;
+		width: 40%;
+	}
+	.recent-post-info {
+		float: left;
+		width: 60%;
+		font-size: 11px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.recent-post-categ {
+		color: #022E40;
+	}
+	.recent-post-title {
+		color: #025373; 
+	}
+	.category-area {
+		padding: 20px;
+		height: auto;
+	}
+	.category-area:hover .product-info {
+		height: 100%;
+	}
+	.category-area:hover .img-producto {
+		width: 90%;
+		margin-left: 5%;
+	}
+	.all-post-buttom {
+		margin-left: 27%;
+		margin-top: 60px;
+	}
+	.all-post-buttom a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.all-post-buttom a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA POST */
+
+	.post-area {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.post-content {
+		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: #F9F8F7;
+	}
+	.author-section {
+		width: 100%;
+		display: table;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: solid 1px #A6A6A6;
+		border-bottom: solid 1px #A6A6A6;
+	}
+	.author-img {
+		float: left;
+		width: 20%;
+	}
+	.author-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	.author-date {
+		float: left;
+		width: 80%;
+	}
+	.author-date p {
+		padding-top: 15px;
+		margin-left: 10px;
+	}
+	.post-date {
+		margin-left: 10px;
+	}
+	.post-text, .post-body {
+		padding-top: 10px;
+	}
+
+	/* CSS PARA POST CATEGORY */
+
+	.section-area {
+		margin-left: 0%;
+	}
+	.post-list-zelda {
+		float: right;
+		height: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-right: 5%;
+	}
+	.post-list-zelda a {
+		color: #F24607;
+		text-decoration: none;
+		transition: font-size .5s;
+	}
+	.post-list-zelda a:hover {
+		color: #F27507;
+		font-size: 16px;
+	}
+	.post-list-area {
+		height: auto;
+		padding: 0px;
+		margin: 20px;
+		clear: right;
+		border-radius: 10px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.post-list-img img {
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.post-text {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+	}
+	.post-introduction {
+		overflow: auto;
+		height: 200px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.pagination-zelda {
+		margin-top: 100px;
+		margin-left: 18%;
+	}
+	.pagination-zelda a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: white;
+		background-color: #D97904;
+	}
+	.pagination-zelda a:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #F29F05;
+	}
+
+	/* CSS PARA SECCIÓN CLIENTES */
+
+	.client-section {
+		padding: 0px;
+	}
+	.client-area {
+		height: auto;
+		padding: 10px;
+		background-color: #F9F8F7;
+	}
+	.client-img img {
+		width: 50%;
+		height: auto;
+		margin-left: 25%;
+		border-radius: 50%;
+	}
+	.client-info {
+		text-align: center;
+	}
+	.client-info h4 {
+		font-size: 20px;
+	}
+	.client-info h5 {
+		font-size: 18px;
+	}
+
+	/* CSS PARA SERVICIOS */
+
+	.service-area {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+		border-radius: 20px;
+		background-color: #F9F8F7;
+		box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	}
+	.service-title h2 {
+		font-size: 23px;
+	}
+	.service-text {
+		text-align: justify;
+	}
+	.service-img img {
+		width: 100%;
+		height: auto;
+	}
+}

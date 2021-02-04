@@ -1,40 +1,46 @@
-{% extends "layout.html" %}
+{% extends "datospaginas/layout.html" %}
+
+{% block nav-productos %}<a class="zelda active dropdown dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTOS <span class="glyphicon glyphicon-menu-down"></span></a>
+	<ul class="dropdown-menu">
+		{% for categoria in categorias %}
+		<a href="{% url 'categoria' pk=categoria.pk %}">{{categoria.nombre}}</a>
+		{% endfor %}
+	</ul>
+{% endblock %}
 
 
 {% block content %}
 <div class="container">
-	<div class="section-title">
-		<h2>{{categoria.nombre}}</h2>
-	</div>
-	<div class="row">
-		<div class="col-sm-8">
-			<ul class="shop product-style-desc">
-				{% for product in productos %}
-				<li data-appear-top-offset="-100" data-animated="fadeInLeft">
-					<figure>
-                    	
-						<a href="{% url 'producto' pk=product.pk %}"><img src="{{product.imagen.url}}" alt="{{product.nombre}}"></a>
-						<figcaption>
-							<h3>{{ product.nombre }}</h3>
-                            <div class="shop-button">     
-                            <a href="{% url 'producto' pk=product.pk %}"><i class="icon-eye-open"></i> Ver</a></div>
-						</figcaption>
-						
-					</figure>
-				</li>
+	<div class="row section-body">
+		<div class="section-title">
+			<h1>{{categoria.nombre}}</h1>
+		</div>
+		<div class="col-sm-9">
+			{% for product in productos %}
+			<div class="col-sm-3 product-area">
+				<div class="product-img">
+					<a href="{% url 'producto' pk=product.pk %}"><img class="img-producto" src="{{product.imagen.url}}" alt="{{product.nombre}}"></a>
+				</div>
+				<div class="product-info">
+					<div class="product-text">
+						<h3>{{ product.nombre }}</h3>
+						<div class="product-zelda">
+	                    	<a href="{% url 'producto' pk=product.pk %}">Ver</a>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+			{% endfor %}
+		</div>
+		<div class="col-sm-3">
+			<div class="section-minititle">
+				<h3>Categorías</h3>
+			</div>
+			<ul class="categories-links">
+				{% for categ in categorias %}
+				<li><span class="glyphicon glyphicon-menu-right"></span><a href="{% url 'categoria' pk=categ.pk %}"> {{categ.nombre}}</a></li>
 				{% endfor %}
 			</ul>
-		</div>
-		<div class="col-sm-4">
-			<div class="section-subtitle">
-				<h5>Categorías</h5>
-			</div>
-			<nav class="categories">
-				<ul>
-					{% for categ in categorias %}
-					<li><a href="{% url 'categoria' pk=categ.pk %}">{{categ.nombre}}</a></li>
-				</ul>
-			</nav>
 		</div>
 	</div>
 </div>

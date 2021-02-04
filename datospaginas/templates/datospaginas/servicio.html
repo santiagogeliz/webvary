@@ -1,0 +1,35 @@
+{% extends 'datospaginas/layout.html' %}
+
+{% block nav-servicios %}<a class="zelda active" href="{% url 'servicio' %}">SERVICIOS</a>{% endblock %}
+
+{% block content %}
+<div class="container">
+	{% if servicios %}
+	<div class="row section-body">
+		<div class="section-title">
+			<h1>Nuestros Servicios</h1>
+		</div>
+		{% for servicio in servicios %}
+		<div class="service-area col-sm-12">
+			<div class="col-sm-7">
+				<div class="service-info">
+					<div class="service-title">
+						<h2>{{servicio.nombre_servicio}}</h2>
+					</div>
+					<div class="service-text">
+						<p>{{servicio.descripcion|linebreaks}}</p>
+						<p>{{servicio.descripcion_detalle|linebreaks}}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="service-img">
+					<img src="{{servicio.imagen_servicio.url}}">
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+</div>
+{% endblock %}

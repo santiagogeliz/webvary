@@ -1,87 +1,123 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="{% static 'css/datospaginas.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script type="text/javascript">
+  		$(function (){
+  			$(window).scroll(function(){
+  				if ($(this).scrollTop() > 10) {
+  					$('.navbar').addClass("short");
+  					$('.nav').addClass("short");
+  					$('.dropdown-menu').addClass("short");
+  					$('.navbar-brand').addClass("short");
+         		} else {
+         			$(".navbar").removeClass("short");
+         			$(".nav").removeClass("short");
+         			$(".dropdown-menu").removeClass("short");
+         			$(".navbar-brand").removeClass("short");
+         		}
+      		});
+  		});
+  	</script>
 	<title>Impor Global - Distribución de Frutos Secos</title>
 </head>
 <body>
-<header class="block">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle menu_toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{% url 'home' %}"><h1>ImporGlobal</h1></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-      	<ul class="nav navbar-nav navbar-right">
-      		<li>{% block nav-home %}<a href="{% url 'home' %}">Inicio</a>{% endblock %}</li>
-      		<li>{% block nav-nosotros %}<a href="{% url 'nosotros' %}">Nosotros</a>{% endblock %}</li>
-      		<li>{% block nav-productos %}<a href="#">Productos</a>{% endblock %}
-      			<ul>
-      				{% for categoria in categorias %}
-      				<li><a href="{% url 'categoria' pk=categoria.pk %}">{{categoria.nombre}}</a></li>
-      			</ul>
-      		</li>
-      		<li>{% block nav-contacto %}<a href="{% url 'contacto' %}">Contacto</a>{% endblock %}</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container-fluid">
+	      	<div class="navbar-header">
+		        <button type="button" class="navbar-toggle menu_toggle" data-toggle="collapse" data-target="#myNavbar">
+		        	<span class="icon-bar"></span>
+		          	<span class="icon-bar"></span>
+		          	<span class="icon-bar"></span>
+		        </button>
+		        {% if not info_contacto.logo_empresa %}
+		        <a class="navbar-brand" href="{% url 'home' %}"><h3>IMPORGLOBAL</h3></a>
+		       	{% endif %}
+		       	{% if info_contacto.logo_empresa %}
+		        <a class="navbar-brand" href="{% url 'home' %}"><img src="{{info_contacto.logo_empresa.url}}"></a>
+		       	{% endif %}
+	      	</div>
+	      	<div class="collapse navbar-collapse" id="myNavbar">
+		      	<ul class="nav navbar-nav navbar-right">
+		      		{% block nav-home %}<a class="zelda" href="{% url 'home' %}">INICIO</a>{% endblock %}
+		      		{% block nav-nosotros %}<a class="zelda" href="{% url 'nosotros' %}">NOSOTROS</a>{% endblock %}
+		      		{% block nav-servicios %}{% if servicios %}<a class="zelda" href="{% url 'servicio' %}">SERVICIOS</a>{% endif %}{% endblock %}
+		      		{% block nav-productos %}{% if productos %}<a class="zelda dropdown dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTOS <span class="glyphicon glyphicon-menu-down"></span></a>
+						<ul class="dropdown-menu {% if post %}moved{% endif %}">
+							{% for categoria in categorias %}
+					      	<a href="{% url 'categoria' pk=categoria.pk %}">{{categoria.nombre}}</a>
+					      	{% endfor %}
+					    </ul>
+					{% endif %}
+					{% endblock %}
+					{% block nav-blog %}{% if post %}<a class="zelda" href="{% url 'blog' %}">BLOG</a>{% endif %}{% endblock %}
+		      		{% block nav-contacto %}<a class="zelda" href="{% url 'contacto' %}">CONTÁCTANOS</a>{% endblock %}
+		        </ul>
+	      	</div>
+	    </div>
+  	</nav>
 </header>
+<div class="content">
 {% block content %}
 
 {% endblock %}
+</div>
 {% block footer %}
-<div id="footer">
+{% if info_contacto %}
+<div class="footer">
 	<div class="container">
-		<div class="one-third column" data-appear-top-offset="-100" data-animated="fadeInLeft">
-			<h3>Nosotros</h3>
-			<p style="margin:0;">{{ info_contacto.descripcion_pie }}</p>
-		</div>
-		<div class="one-third column" data-appear-top-offset="-100" data-animated="fadeInUp">
-			<h3>Ponte En Contacto</h3>
-			<ul class="get-in-touch">
-			{% if info_contacto.ubicacion %}
-				<li >
-					<i class="icon-map-marker"></i> <p>{{ info_contacto.ubicacion }}</p>
-				</li>
-			{% endif %}
-			{% if info_contacto.telefono %}
-			<li>
-				<i class="icon-user"></i> <p>{{ info_contacto.telefono }}</p>
-			</li>
-			{% endif %}
-			<li><i class="icon-envelope-alt"></i> <p>{{ info_contacto.email }}</p></li>
-			</ul>
+		<div class="row section-body">
+			<div class="col-sm-4">
+				<h3>Nosotros</h3>
+				<p>{{info_contacto.descripcion_pie|linebreaksbr}}</p>
+			</div>
+			<div class="col-sm-8">
+				<h3>Ponte En Contacto</h3>
+				<ul class="contacto-footer">
+					{% if info_contacto.ubicacion %}
+					<li >
+						<p><span class="glyphicon glyphicon-map-marker"></span> {{info_contacto.ubicacion}}</p>
+					</li>
+					{% endif %}
+					{% if info_contacto.telefono %}
+					<li>
+						<p><span class="glyphicon glyphicon-phone"></span> {{info_contacto.telefono}}</p>
+					</li>
+					{% endif %}
+					<li>
+						<p><span class="glyphicon glyphicon-envelope"></span> {{info_contacto.email}}</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
-<div id="footer-bottom">
+<div class="footer-bottom">
 	<div class="container">
-		<div class="eight columns">ImporGlobal © Copyright {% now "Y" %}. Todos los derechos reservados</div>
-		<div class="eight columns">
-			{% if info_contacto.facebook or info_contacto.instagram %}
-			<ul class="social-icons-footer">
+		<div class="row section-body">
+			<div class="col-sm-10">ImporGlobal © Copyright {% now "Y" %}. Todos los derechos reservados</div>
+			<div class="col-sm-2">
+				{% if info_contacto.facebook or info_contacto.instagram %}
 				{% if info_contacto.facebook %}
-				<li><a href="{{ info_contacto.facebook }}" class="tooltip top" title="Facebook"><i class="icon-facebook"></i></a></li>
+				<a href="{{ info_contacto.facebook }}"><img src="{% static 'img/FB_icon-icons.com_65534.ico' %}" style="width: 17px; height: auto;"></a>{% endif %}
+				{% if info_contacto.instagram %}
+				<a href="{{ info_contacto.instagram }}"><img src="{% static 'img/INSTAGRAM_icon-icons.com_65535.ico' %}" style="width: 17px; height: auto; margin-left: 10px;"></a>{% endif %}
 				{% endif %}
-                {% if info_contacto.instagram %}
-				<li><a href="{{ info_contacto.instagram }}" class="tooltip top" title="Instagram"><i class="icon-instagram"></i></a></li>
-				{% endif %}
-			</ul>
-			{% endif %}
+			</div>
 		</div>
 	</div>
 </div>
+{% endif %}
 {% endblock footer %}
 </body>
 </html>

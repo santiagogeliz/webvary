@@ -1,0 +1,70 @@
+{% extends "datospaginas/layout.html" %}
+
+{% block nav-blog %}<a class="zelda active" href="{% url 'blog' %}">BLOG</a>{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="row section-body">
+		<div class="section-title">
+			<h1>Más Artículos</h1>
+		</div>
+		<div class="section-area">
+			<div class="post-list-zelda">
+				<a href="{% url 'blog' %}">Volver</a>
+			</div>
+			{% for post in page_obj %}
+			<div class="col-sm-5 post-list-area">
+				<div class="post-list-img">
+					<img class="img-post" src="{{post.imagen_post.url}}" alt="{{post.titulo}}">
+				</div>
+				<div class="post-text">
+					<div class="post-tittle">
+						<h2>{{post.titulo}}</h2>
+					</div>
+					<div class="post-introduction">
+						<p>{{post.introduccion|linebreaks}}</p>
+					</div>
+					<div class="post-zelda">
+						<a href="{% url 'post' pk=post.pk %}">Leer más</a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="row">
+		<div class="pagination-zelda">
+			{% if page_obj.has_previous %}
+			<a href="?page=1">&laquo; Primera</a>
+			<a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+			{% endif %}
+			{% if page_obj.has_next %}
+			<a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+			<a href="?page={{ page_obj.paginator.num_pages }}">Ultima &raquo;</a>
+			{% endif %}
+		</div>
+	</div>
+	<div class="row section-body">
+		<div class="section-subtitle">
+			<h2>Categorías</h2>
+		</div>
+		<div class="col-sm-8">
+			{% for category in post_categories %}
+			<div class="col-sm-4 category-area">
+				<div class="product-img">
+					<a href="{% url 'post_category' pk=category.pk %}"><img class="img-producto" src="{{category.imagen_categoria.url}}" alt="{{category.nombre}}"></a>
+				</div>
+				<div class="product-info">
+					<div class="product-text">
+						<h3>{{ category.nombre }}</h3>
+						<div class="product-zelda">
+	                    	<a href="{% url 'post_category' pk=category.pk %}">Ver</a>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+            {% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

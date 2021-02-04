@@ -1,0 +1,80 @@
+{% extends "datospaginas/layout.html" %}
+
+{% block nav-blog %}<a class="zelda active" href="{% url 'blog' %}">BLOG</a>{% endblock %}
+
+
+{% block content %}
+<div class="container">
+	<div class="row section-body">
+		<div class="section-title">
+			<h1>Blog</h1>
+		</div>
+		{% if post != None %}
+		<div class="col-sm-8">
+			<div class="post-section">
+				<div class="post-img">
+					<a href="{% url 'post' pk=post.pk %}"><img class="img-post" src="{{post.imagen_post.url}}" alt="{{post.titulo}}"></a>
+				</div>
+				<div class="post-title">
+					<h2>{{post.titulo}}</h2>
+				</div>
+				<div class="post-body">
+					<p>{{post.introduccion|linebreaksbr}}</p>
+				</div>
+				<div class="post-zelda">
+					<a href="{% url 'post' pk=post.pk %}">Leer más</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="section-minititle">
+				<h3>Artículos Recientes</h3>
+			</div>
+			{% for post in recents_posts %}
+			<a href="{% url 'post' pk=post.pk %}">
+				<div class="recent-post">
+					<div class="recent-post-img">
+						<img src="{{post.imagen_post.url}}" alt="{{post.titulo}}" style="width: 100%; height: auto;">
+					</div>
+					<div class="recent-post-info">
+						<p class="recent-post-categ">{{post.categoria}}</p>
+						<p class="recent-post-title">{{post.titulo}}</p>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+	<div class="row section-body">
+		<div class="section-subtitle">
+			<h2>Categorías</h2>
+		</div>
+		<div class="col-sm-8">
+			{% for category in post_categories %}
+			<div class="col-sm-4 category-area">
+				<div class="product-img">
+					<a href="{% url 'post_category' pk=category.pk %}"><img class="img-producto" src="{{category.imagen_categoria.url}}" alt="{{category.nombre}}"></a>
+				</div>
+				<div class="product-info">
+					<div class="product-text">
+						<h3>{{ category.nombre }}</h3>
+						<div class="product-zelda">
+	                    	<a href="{% url 'post_category' pk=category.pk %}">Ver</a>
+	                    </div>
+	                </div>
+                </div>
+            </div>
+            {% endfor %}
+		</div>
+	</div>
+	<div class="row">
+		<div class="all-post-buttom">
+			<a href="{% url 'all_posts' %}">Ver más artículos</a>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+
