@@ -49,10 +49,10 @@ X_FRAME_OPTIONS = 'DENY'
 
 # STATIC & MEDIA
 # ------------------------
-STATIC_ROOT = '/home/javidaza/webapps/static_dazaglobal/'
+STATIC_ROOT = '/home/webvary/static_webvary/'
 STATIC_URL = '/static/'
-MEDIA_ROOT = '/home/javidaza/webapps/media_dazaglobal/'
-MEDIA_URL = 'https://dazaglobal.com/media/'
+MEDIA_ROOT = '/home/webvary/media_webvary/'
+MEDIA_URL = 'https://webvary.pythonanywhere.com/media/'
 
 
 # EMAIL
