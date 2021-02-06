@@ -70,7 +70,7 @@ ul {
 .nav.short {
 	top: 20px;
 }
-.zelda {
+.zelda, .zelda:visited {
 	color: #59544F;
 	margin-right: 20px;
 	padding-top: 7px;
@@ -82,7 +82,7 @@ ul {
 	border-bottom: solid #F2D377;
 
 }
-.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+.zelda:hover, .zelda:active, .zelda:focus {
 	text-decoration: none;
 	color: white;
 	background-color: #F2D377;
@@ -691,7 +691,7 @@ ul {
 	.nav.short {
 		top: 20px;
 	}
-	.zelda {
+	.zelda, .zelda:visited {
 		color: #59544F;
 		margin-right: 20px;
 		padding-top: 7px;
@@ -703,7 +703,7 @@ ul {
 		border-bottom: solid #F2D377;
 
 	}
-	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+	.zelda:hover, .zelda:active, .zelda:focus {
 		text-decoration: none;
 		color: white;
 		background-color: #F2D377;
@@ -1298,7 +1298,7 @@ ul {
 	.nav.short {
 		top: 20px;
 	}
-	.zelda {
+	.zelda, .zelda:visited {
 		color: #59544F;
 		margin-right: 5px;
 		padding-top: 7px;
@@ -1310,7 +1310,7 @@ ul {
 		border-bottom: solid #F2D377;
 
 	}
-	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+	.zelda:hover, .zelda:active, .zelda:focus {
 		text-decoration: none;
 		color: white;
 		background-color: #F2D377;
@@ -1946,7 +1946,7 @@ ul {
 	.nav.short {
 		top: 0px;
 	}
-	.zelda {
+	.zelda, .zelda:visited {
 		color: #59544F;
 		margin-right: 5px;
 		padding-top: 5px;
@@ -1958,7 +1958,7 @@ ul {
 		border-bottom: solid #F2D377;
 
 	}
-	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+	.zelda:hover, .zelda:active, .zelda:focus {
 		text-decoration: none;
 		color: white;
 		background-color: #F2D377;
@@ -2612,7 +2612,7 @@ ul {
 	.nav.short {
 		top: 0px;
 	}
-	.zelda {
+	.zelda, .zelda:visited {
 		color: #59544F;
 		margin-right: 5px;
 		padding-top: 5px;
@@ -2624,7 +2624,7 @@ ul {
 		border-bottom: solid #F2D377;
 
 	}
-	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+	.zelda:hover, .zelda:active, .zelda:focus {
 		text-decoration: none;
 		color: white;
 		background-color: #F2D377;
@@ -3286,7 +3286,7 @@ ul {
 	.nav.short {
 		top: 0px;
 	}
-	.zelda {
+	.zelda, .zelda:visited {
 		color: #59544F;
 		margin-right: 2px;
 		padding-top: 4px;
@@ -3298,7 +3298,7 @@ ul {
 		border-bottom: solid #F2D377;
 
 	}
-	.zelda:hover, .zelda:active, .zelda:focus, .zelda:visited {
+	.zelda:hover, .zelda:active, .zelda:focus {
 		text-decoration: none;
 		color: white;
 		background-color: #F2D377;
