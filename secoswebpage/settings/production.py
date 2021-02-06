@@ -16,7 +16,6 @@ DATABASES = {
     }
 }
 
-"""
 # SECURITY
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secure-proxy-ssl-header
@@ -45,7 +44,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = bool(os.environ.get('DJANGO_SECURE_CONTENT_TYPE_NO
 SECURE_BROWSER_XSS_FILTER = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#x-frame-options
 X_FRAME_OPTIONS = 'DENY'
-"""
+
 
 # STATIC & MEDIA
 # ------------------------
@@ -58,10 +57,10 @@ MEDIA_URL = '/media/'
 # EMAIL
 # ------------------------------------------------------------------------------
 EMAIL_HOST = 'smtp.webfaction.com'
-EMAIL_HOST_USER = 'dazaglobal'
-EMAIL_HOST_PASSWORD = 'daZa_g#'
-DEFAULT_FROM_EMAIL = 'info@dazaglobal.com'
-SERVER_EMAIL = 'info@dazaglobal.com'
+EMAIL_HOST_USER = 'webvary'
+EMAIL_HOST_PASSWORD = 'web_v#'
+DEFAULT_FROM_EMAIL = 'gelizsantiago93@gmail.com'
+SERVER_EMAIL = 'gelizsantiago93@gmail.com'
 
 
 # LOGGING
