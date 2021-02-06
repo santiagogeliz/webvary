@@ -52,7 +52,7 @@ X_FRAME_OPTIONS = 'DENY'
 STATIC_ROOT = '/home/webvary/static_webvary/'
 STATIC_URL = '/static/'
 MEDIA_ROOT = '/home/webvary/media_webvary/'
-MEDIA_URL = 'https://webvary.pythonanywhere.com/media/'
+MEDIA_URL = '/media/'
 
 
 # EMAIL
