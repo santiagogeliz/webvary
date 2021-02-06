@@ -1,5 +1,6 @@
 from datospaginas import choices
 from django.db import models
+from ckeditor.fields import RichTextField
 from django.utils import timezone
 from django.db.models import CharField
 from django.contrib.auth.models import AbstractUser
@@ -438,7 +439,7 @@ class Blog(models.Model):
         verbose_name=u'Breve Introducción',
         help_text='Este será el primer párrafo de tu artículo.'
     )
-    contenido = models.TextField(
+    contenido = RichTextField(
         blank=False,
         verbose_name=u'Contenido del Artículo',
         help_text='Escribe el texto principal de tu artículo.'

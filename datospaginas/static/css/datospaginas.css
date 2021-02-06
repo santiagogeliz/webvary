@@ -47,6 +47,20 @@ ul {
 	width: 100%;
 	height: auto;
 }
+.brand-text {
+	position: relative;
+	left: 90px;
+	top: auto;
+	bottom: 5px;
+	color: #59544F;
+}
+.brand-text:hover {
+	color: #59544F;
+	text-decoration: none;
+}
+.brand-text.short {
+	bottom: 20px;
+}
 .nav {
 	font-size: 15px;
 	position: relative;
@@ -621,6 +635,14 @@ ul {
 }
 
 
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px){
@@ -645,6 +667,20 @@ ul {
 	.navbar-brand img {
 		width: 100%;
 		height: auto;
+	}
+	.brand-text {
+		position: relative;
+		left: 60px;
+		top: auto;
+		bottom: 5px;
+		color: #59544F;
+	}
+	.brand-text:hover {
+		color: #59544F;
+		text-decoration: none;
+	}
+	.brand-text.short {
+		bottom: 20px;
 	}
 	.nav {
 		font-size: 12px;
@@ -1203,6 +1239,18 @@ ul {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS PARA TABLET */
+
 @media screen and (max-width: 768px){
 	/* CSS PARA MENSAJES ADMIN */
 
@@ -1218,7 +1266,7 @@ ul {
 	.navbar-brand {
 		position: relative;
 		top: 10px;
-		left: 20px;
+		left: 30px;
 	}
 	.navbar-brand.short {
 		top: auto;
@@ -1228,10 +1276,23 @@ ul {
 		width: 80%;
 		height: auto;
 	}
+	.brand-text {
+		position: relative;
+		left: 30px;
+		top: auto;
+		color: #59544F;
+	}
+	.brand-text:hover {
+		color: #59544F;
+		text-decoration: none;
+	}
+	.brand-text.short {
+		bottom: 25px;
+	}
 	.nav {
 		font-size: 10px;
 		position: relative;
-		right: 20px;
+		right: 30px;
 		top: 40px;
 	}
 	.nav.short {
@@ -1850,6 +1911,19 @@ ul {
 	.navbar-brand.short {
 		top: auto;
 		bottom: 5px;
+	}
+	.brand-text {
+		position: relative;
+		left: 30px;
+		bottom: 20px;
+		color: #59544F;
+	}
+	.brand-text:hover {
+		color: #59544F;
+		text-decoration: none;
+	}
+	.brand-text.short {
+		bottom: 20px;
 	}
 	.navbar-brand img {
 		width: 80%;
@@ -2503,6 +2577,19 @@ ul {
 	.navbar-brand.short {
 		top: auto;
 		bottom: 5px;
+	}
+	.brand-text {
+		position: relative;
+		left: 30px;
+		bottom: 20px;
+		color: #59544F;
+	}
+	.brand-text:hover {
+		color: #59544F;
+		text-decoration: none;
+	}
+	.brand-text.short {
+		bottom: 20px;
 	}
 	.navbar-brand img {
 		width: 80%;
@@ -3164,6 +3251,19 @@ ul {
 	.navbar-brand.short {
 		top: auto;
 		bottom: 10px;
+	}
+	.brand-text {
+		position: relative;
+		left: 20px;
+		bottom: 20px;
+		color: #59544F;
+	}
+	.brand-text:hover {
+		color: #59544F;
+		text-decoration: none;
+	}
+	.brand-text.short {
+		bottom: 20px;
 	}
 	.navbar-brand img {
 		width: 90%;

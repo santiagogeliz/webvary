@@ -19,16 +19,18 @@
   					$('.nav').addClass("short");
   					$('.dropdown-menu').addClass("short");
   					$('.navbar-brand').addClass("short");
+  					$('.navbar-brand-text').addClass("short");
          		} else {
          			$(".navbar").removeClass("short");
          			$(".nav").removeClass("short");
          			$(".dropdown-menu").removeClass("short");
          			$(".navbar-brand").removeClass("short");
+         			$(".navbar-brand-text").removeClass("short");
          		}
       		});
   		});
   	</script>
-	<title>Impor Global - Distribución de Frutos Secos</title>
+	<title>Webvary - {% block title %}Distribución de Frutos Secos{% endblock %}</title>
 </head>
 <body>
 <header>
@@ -41,7 +43,7 @@
 		          	<span class="icon-bar"></span>
 		        </button>
 		        {% if not info_contacto.logo_empresa %}
-		        <a class="navbar-brand" href="{% url 'home' %}"><h3>IMPORGLOBAL</h3></a>
+		        <a class="navbar-brand brand-text" href="{% url 'home' %}"><h2>Webvary</h2></a>
 		       	{% endif %}
 		       	{% if info_contacto.logo_empresa %}
 		        <a class="navbar-brand" href="{% url 'home' %}"><img src="{{info_contacto.logo_empresa.url}}"></a>

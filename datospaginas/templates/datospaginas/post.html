@@ -1,5 +1,7 @@
 {% extends "datospaginas/layout.html" %}
 
+{% block title %}| {{post.titulo}}{% endblock %}
+
 {% load static %}
 
 {% block nav-blog %}<a class="zelda active" href="{% url 'blog' %}">BLOG</a>{% endblock %}
@@ -28,7 +30,7 @@
 						<p>{{post.introduccion|linebreaks}}</p>
 					</div>
 					<div class="post-body">
-						<p>{{post.contenido|linebreaks}}</p>
+						{{post.contenido|safe}}
 					</div>
 				</div>
 			</div>
