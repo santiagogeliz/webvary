@@ -16,7 +16,7 @@ DATABASES = {
     }
 }
 
-
+"""
 # SECURITY
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#secure-proxy-ssl-header
@@ -45,7 +45,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = bool(os.environ.get('DJANGO_SECURE_CONTENT_TYPE_NO
 SECURE_BROWSER_XSS_FILTER = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#x-frame-options
 X_FRAME_OPTIONS = 'DENY'
-
+"""
 
 # STATIC & MEDIA
 # ------------------------

@@ -6,7 +6,7 @@ SECRET_KEY = 'f0a-mzeilurmcpctvb=cnf=-0%k+x&d&n%xa=a_0$-8jt5x!q4'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'webvary.pythonanywhere.com']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
