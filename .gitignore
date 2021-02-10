@@ -3,7 +3,7 @@
 __pycache__
 nvenv
 .env
-development.py
+settings/development.py
 db.sqlite3
 /static
 media/media
