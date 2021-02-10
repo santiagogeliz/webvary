@@ -3,9 +3,8 @@
 __pycache__
 nvenv
 .env
-/development.py
+development.py
 db.sqlite3
-/static
 media/media
 media/
 .DS_Store

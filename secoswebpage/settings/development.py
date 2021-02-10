@@ -1,8 +1,9 @@
 from .base import *
 import os
+from decouple import config
 
 
-SECRET_KEY = 'f0a-mzeilurmcpctvb=cnf=-0%k+x&d&n%xa=a_0$-8jt5x!q4'
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
 
