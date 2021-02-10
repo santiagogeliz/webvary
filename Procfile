@@ -1,0 +1,1 @@
+web: gunicorn secoswebpage.wsgi --log-file -

@@ -2,6 +2,8 @@
 *~
 __pycache__
 nvenv
+.env
+development.py
 db.sqlite3
 /static
 media/media

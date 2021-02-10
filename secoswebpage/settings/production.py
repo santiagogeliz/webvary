@@ -1,20 +1,29 @@
 from .base import *
 import os
+import dj_database_url
+from decouple import config, Csv
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'f0a-mzeilurmcpctvb=cnf=-0%k+x&d&n%xa=a_0$-8jt5x!q4')
+SECRET_KEY = config('SECRET_KEY')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'webvary.pythonanywhere.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': '',
     }
 }
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # SECURITY
 # ------------------------------------------------------------------------------
@@ -56,11 +65,11 @@ MEDIA_URL = '/media/'
 
 # EMAIL
 # ------------------------------------------------------------------------------
-EMAIL_HOST = 'smtp.webfaction.com'
-EMAIL_HOST_USER = 'webvary'
-EMAIL_HOST_PASSWORD = 'web_v#'
-DEFAULT_FROM_EMAIL = 'gelizsantiago93@gmail.com'
-SERVER_EMAIL = 'gelizsantiago93@gmail.com'
+EMAIL_HOST = config('EMAIL_HOST'),
+EMAIL_HOST_USER = config('EMAIL_HOST_USER'),
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD'),
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL'),
+SERVER_EMAIL = config('SERVER_EMAIL'),
 
 
 # LOGGING
