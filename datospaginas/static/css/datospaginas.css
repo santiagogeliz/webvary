@@ -410,6 +410,16 @@ ul {
 .contact-descrip {
 	text-align: justify;
 }
+.contact-informations a {
+	color: #5C6673;
+}
+.contact-informations a:hover {
+	text-decoration: none;
+	color: #9CD9C8;
+}
+.contact-informations a:visited, .contact-informations a:active, .contact-informations a:focus {
+	text-decoration: none;
+}
 
 /* CSS PARA BLOG */
 
@@ -1010,6 +1020,17 @@ ul {
 	}
 	.contact-descrip {
 		text-align: justify;
+	}
+
+	.contact-informations a {
+		color: #5C6673;
+	}
+	.contact-informations a:hover {
+		text-decoration: none;
+		color: #9CD9C8;
+	}
+	.contact-informations a:visited, .contact-informations a:active, .contact-informations a:focus {
+		text-decoration: none;
 	}
 
 	/* CSS PARA BLOG */
@@ -1642,6 +1663,16 @@ ul {
 	}
 	.contact-descrip {
 		text-align: justify;
+	}
+	.contact-informations a {
+		color: #5C6673;
+	}
+	.contact-informations a:hover {
+		text-decoration: none;
+		color: #9CD9C8;
+	}
+	.contact-informations a:visited, .contact-informations a:active, .contact-informations a:focus {
+		text-decoration: none;
 	}
 
 	/* CSS PARA BLOG */
@@ -2303,6 +2334,16 @@ ul {
 	}
 	.contact-descrip {
 		text-align: justify;
+	}
+	.contact-informations a {
+		color: #5C6673;
+	}
+	.contact-informations a:hover {
+		text-decoration: none;
+		color: #9CD9C8;
+	}
+	.contact-informations a:visited, .contact-informations a:active, .contact-informations a:focus {
+		text-decoration: none;
 	}
 
 	/* CSS PARA BLOG */
@@ -2972,6 +3013,16 @@ ul {
 	}
 	.contact-descrip {
 		text-align: justify;
+	}
+	.contact-informations a {
+		color: #5C6673;
+	}
+	.contact-informations a:hover {
+		text-decoration: none;
+		color: #9CD9C8;
+	}
+	.contact-informations a:visited, .contact-informations a:active, .contact-informations a:focus {
+		text-decoration: none;
 	}
 
 	/* CSS PARA BLOG */
@@ -3644,6 +3695,16 @@ ul {
 	}
 	.contact-descrip {
 		text-align: justify;
+	}
+	.contact-informations a {
+		color: #5C6673;
+	}
+	.contact-informations a:hover {
+		text-decoration: none;
+		color: #9CD9C8;
+	}
+	.contact-informations a:visited, .contact-informations a:active, .contact-informations a:focus {
+		text-decoration: none;
 	}
 
 	/* CSS PARA BLOG */

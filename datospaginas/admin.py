@@ -24,7 +24,7 @@ admin.site.register(Nosotros, NosotrosAdmin)
 
 class PortadaPrincipalAdmin(admin.ModelAdmin):
     list_display = (
-        'titulo','color_texto','primera_portada'
+        'imagen_banner','color_texto','primera_portada'
     )
 
 admin.site.register(PortadaPrincipal, PortadaPrincipalAdmin)
