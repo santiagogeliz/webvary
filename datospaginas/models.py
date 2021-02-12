@@ -165,8 +165,7 @@ class Contacto(models.Model):
     )
     telefono = models.CharField(blank=False, max_length=50)
     email = models.EmailField(blank=False, max_length=200)
-    sitio_web = models.CharField(
-        max_length=100,
+    sitio_web = models.URLField(
         blank=True, 
         help_text='Escribe la URL de un sitio web.'
     )
